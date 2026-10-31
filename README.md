@@ -1,2 +1,3 @@
-# pneutrino-series
+# pneutrino-dynamic-resonator
 Pneutrino is a series of VST3 audio plugins by independent electronic music producer NeutronStar714, mainly consisting of effect plugins suitable for certain applications in sound design or live guitar playing.
+**Dynamic Resonator** is the first plugin in this series. Inspired by BOSS's FT-2 dynamic filter pedal, which applies a filter frequency responding to volume (aka. an autowah) that sweeps upwards and downwards, Dynamic Resonator took this idea further, giving the user a four-band equalizer to play with, each band linked to volume, and has isolated frequency, resonance (Q), sensitivity, loudness and up/down sweep controls.
