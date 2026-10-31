@@ -1,0 +1,43 @@
+--- 2026-07-31_00-43-18__DFFC.h
++++ current/Source/PluginEditor.h
+@@ -31,7 +31,7 @@
+ };
+ 
+ //==============================================================================
+-// Loudness meter (unchanged)
++// Loudness meter
+ class LoudnessMeter final : public juce::Component
+ {
+ public:
+@@ -41,6 +41,23 @@
+ private:
+     float envelopeLevel = 0.0f;
+     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (LoudnessMeter)
++};
++
++//==============================================================================
++// Perceived loudness meter — same as LoudnessMeter but also highlights
++// the Dynamic Range window [drMin, drMax] as a band on the bar.
++class PerceivedLoudnessMeter final : public juce::Component
++{
++public:
++    PerceivedLoudnessMeter();
++    void setLevel (float level) noexcept { envelopeLevel = level; repaint(); }
++    void setDRRange (float min, float max) noexcept { drMin = min; drMax = max; repaint(); }
++    void paint (juce::Graphics& g) override;
++private:
++    float envelopeLevel = 0.0f;
++    float drMin = 0.0f;
++    float drMax = 1.0f;
++    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (PerceivedLoudnessMeter)
+ };
+ 
+ //==============================================================================
+@@ -156,6 +173,7 @@
+ 
+     // Displays
+     LoudnessMeter  loudnessMeter;
++    PerceivedLoudnessMeter perceivedMeter;
+     FilterResponse filterResponse;
+ 
+     // Attachments

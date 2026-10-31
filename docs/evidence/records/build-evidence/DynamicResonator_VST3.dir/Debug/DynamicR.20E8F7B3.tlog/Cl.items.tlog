@@ -1,0 +1,8 @@
+[workspace]\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_AAX.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator_VST3.dir\Debug\juce_audio_plugin_client_AAX.obj
+[workspace]\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_AAX_utils.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator_VST3.dir\Debug\juce_audio_plugin_client_AAX_utils.obj
+[workspace]\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_ARA.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator_VST3.dir\Debug\juce_audio_plugin_client_ARA.obj
+[workspace]\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_LV2.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator_VST3.dir\Debug\juce_audio_plugin_client_LV2.obj
+[workspace]\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_Standalone.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator_VST3.dir\Debug\juce_audio_plugin_client_Standalone.obj
+[workspace]\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_Unity.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator_VST3.dir\Debug\juce_audio_plugin_client_Unity.obj
+[workspace]\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST2.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator_VST3.dir\Debug\juce_audio_plugin_client_VST2.obj
+[workspace]\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_VST3.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator_VST3.dir\Debug\juce_audio_plugin_client_VST3.obj

@@ -1,0 +1,24 @@
+[workspace]\Dynamic Resonator\Source\PluginProcessor.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\PluginProcessor.obj
+[workspace]\Dynamic Resonator\Source\PluginEditor.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\PluginEditor.obj
+[workspace]\JUCE\modules\juce_audio_processors\juce_audio_processors.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_audio_processors.obj
+[workspace]\JUCE\modules\juce_gui_extra\juce_gui_extra.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_gui_extra.obj
+[workspace]\JUCE\modules\juce_gui_basics\juce_gui_basics.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_gui_basics.obj
+[workspace]\JUCE\modules\juce_gui_basics\juce_gui_basics_2.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_gui_basics_2.obj
+[workspace]\JUCE\modules\juce_gui_basics\juce_gui_basics_3.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_gui_basics_3.obj
+[workspace]\JUCE\modules\juce_gui_basics\juce_gui_basics_4.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_gui_basics_4.obj
+[workspace]\JUCE\modules\juce_gui_basics\juce_gui_basics_5.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_gui_basics_5.obj
+[workspace]\JUCE\modules\juce_graphics\juce_graphics.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_graphics.obj
+[workspace]\JUCE\modules\juce_graphics\juce_graphics_Harfbuzz.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_graphics_Harfbuzz.obj
+[workspace]\JUCE\modules\juce_graphics\juce_graphics_Sheenbidi.c;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_graphics_Sheenbidi.obj
+[workspace]\JUCE\modules\juce_events\juce_events.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_events.obj
+[workspace]\JUCE\modules\juce_core\juce_core.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_core.obj
+[workspace]\JUCE\modules\juce_core\juce_core_CompilationTime.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_core_CompilationTime.obj
+[workspace]\JUCE\modules\juce_data_structures\juce_data_structures.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_data_structures.obj
+[workspace]\JUCE\modules\juce_audio_processors_headless\juce_audio_processors_headless.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_audio_processors_headless.obj
+[workspace]\JUCE\modules\juce_audio_processors_headless\juce_audio_processors_headless_ara.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_audio_processors_headless_ara.obj
+[workspace]\JUCE\modules\juce_audio_processors_headless\juce_audio_processors_headless_lv2_libs.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_audio_processors_headless_lv2_libs.obj
+[workspace]\JUCE\modules\juce_audio_basics\juce_audio_basics.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_audio_basics.obj
+[workspace]\JUCE\modules\juce_dsp\juce_dsp.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_dsp.obj
+[workspace]\JUCE\modules\juce_audio_formats\juce_audio_formats.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_audio_formats.obj
+[workspace]\JUCE\modules\juce_audio_utils\juce_audio_utils.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_audio_utils.obj
+[workspace]\JUCE\modules\juce_audio_devices\juce_audio_devices.cpp;[workspace]\Dynamic Resonator\Build\DynamicResonator.dir\Debug\juce_audio_devices.obj

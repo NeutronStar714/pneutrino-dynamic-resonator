@@ -1,0 +1,26 @@
+--- 2026-08-02_19-15-53__0ESZ.cpp
++++ 2026-08-02_19-17-18__jXDz.cpp
+@@ -699,8 +699,8 @@
+     };
+ 
+     const int colKnobH  = 65;
+-    const int colHeader = 22;
+-    const int colRow    = colKnobH + 14 - 2;    // 77
++    const int colHeader = 16;
++    const int colRow    = colKnobH + 14 + 4;    // 83
+     const int colH      = colHeader + colRow * 3 + 36;  // 305
+     const int colW      = (getWidth() - 24) / 4;
+     const int boxY      = 42;  // 2px above header bottom
+@@ -722,10 +722,10 @@
+     auto area = getLocalBounds().reduced (12);
+ 
+     // === Header ===
+-    nameLabel.setBounds (area.removeFromTop (34).withY (6).reduced (0, 4));
++    nameLabel.setBounds (area.removeFromTop (34).withY (0).reduced (0, 4));
+ 
+     // === Attribution (always at bottom) ===
+-    attributionLabel.setBounds (area.removeFromBottom (18).withY (795) .reduced (4, 0));
++    attributionLabel.setBounds (area.removeFromBottom (18).withY (798) .reduced (4, 0));
+ 
+     // === 4-band columns (3 knobs + dir switch, PEAK bands have vertical level slider) ===
+     const int colKnobH  = 65;

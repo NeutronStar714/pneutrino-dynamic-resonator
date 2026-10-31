@@ -1,0 +1,11 @@
+--- 2026-07-30_12-07-13__ov8J.cpp
++++ 2026-07-30_12-07-28__Runc.cpp
+@@ -645,7 +645,7 @@
+         // PEAK bands: vertical level slider on the right side
+         if (isPeak)
+         {
+-            const int sliderH = 2 * colRow + colKnobH - 2;  // text box bottom aligns with Sens text box
++            const int sliderH = 2 * colRow + colKnobH - 3;  // text box bottom aligns with Sens text box
+             const int belowTxt = col.getY() + sliderH;  // label below component = same Y as Sens label
+             auto sr = col.withLeft (col.getX() + colW - sliderW - 15)
+                         .withTop (col.getY())

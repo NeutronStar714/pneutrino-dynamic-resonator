@@ -1,0 +1,11 @@
+--- 2026-07-30_12-24-12__DTQw.cpp
++++ 2026-07-30_12-24-49__GgKS.cpp
+@@ -584,7 +584,7 @@
+     const int colH      = colHeader + colRow * 3 + 32;  // 303
+     const int colW      = (getWidth() - 24) / 4;
+     const int boxY      = 48;  // 8 reduced + 40 header
+-    const float margin  = 2.5f;
++    const float margin  = 5.0f;
+     const float radius  = 10.0f;
+     const float borderW = 2.5f;
+ 

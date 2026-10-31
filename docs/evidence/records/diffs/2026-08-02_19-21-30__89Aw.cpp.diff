@@ -1,0 +1,11 @@
+--- 2026-08-02_19-21-18__Dg3K.cpp
++++ 2026-08-02_19-21-30__89Aw.cpp
+@@ -701,7 +701,7 @@
+     const int colKnobH  = 65;
+     const int colHeader = 22;
+     const int colRow    = colKnobH + 14 + 4;    // 83
+-    const int colH      = colHeader + colRow * 3 + 36 ;  // 305
++    const int colH      = colHeader + colRow * 3 + 42 ;  // 311
+     const int colW      = (getWidth() - 24) / 4;
+     const int boxY      = 36;  // 2px above header bottom
+     const float margin  = 7.0f;

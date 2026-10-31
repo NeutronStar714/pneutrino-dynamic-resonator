@@ -1,0 +1,11 @@
+--- 2026-08-02_19-09-01__B28v.cpp
++++ 2026-08-02_19-13-34__gecI.cpp
+@@ -725,7 +725,7 @@
+     nameLabel.setBounds (area.removeFromTop (34).withY (6).reduced (0, 4));
+ 
+     // === Attribution (always at bottom) ===
+-    attributionLabel.setBounds (area.removeFromBottom (18).withY (770) .reduced (4, 0));
++    attributionLabel.setBounds (area.removeFromBottom (18).withY (800) .reduced (4, 0));
+ 
+     // === 4-band columns (3 knobs + dir switch, PEAK bands have vertical level slider) ===
+     const int colKnobH  = 65;

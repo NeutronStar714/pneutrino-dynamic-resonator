@@ -1,0 +1,247 @@
+[
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\CMakeCache.txt",
+    "recovered_path": "build-evidence\\CMakeCache.txt",
+    "bytes": 16979,
+    "last_write_time": "2026-08-02T19:38:02.063260+08:00",
+    "sha256": "08dc979ee4109c248c200b91f5fc6f23529eec278525a8709fe5c28a9a73d68b"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\CMakeFiles\\CMakeConfigureLog.yaml",
+    "recovered_path": "build-evidence\\CMakeFiles\\CMakeConfigureLog.yaml",
+    "bytes": 97284,
+    "last_write_time": "2026-07-27T22:44:02.105430+08:00",
+    "sha256": "746dac28ecb47f3f3f028a210070b3044841e5952912a49aff0e495aec165c50"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CL.command.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CL.command.1.tlog",
+    "bytes": 67766,
+    "last_write_time": "2026-08-02T13:06:14.634141+08:00",
+    "sha256": "bf5ebbbc23e1ab86edd52cda431519fa65b1f7c46def7faf1473b0d84fd5f25b"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\Cl.items.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\Cl.items.tlog",
+    "bytes": 1722,
+    "last_write_time": "2026-08-02T19:38:03.561306+08:00",
+    "sha256": "d336c26a0f0aee32e6c74dc40a4d92558e8cc0ea89f08a68b1ee84b6b0ced054"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CL.read.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CL.read.1.tlog",
+    "bytes": 180170,
+    "last_write_time": "2026-08-02T13:06:14.633132+08:00",
+    "sha256": "29b0f36619be082a7f28a248f463eabe18adac8769b76e1b7843191a32ebbb65"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CL.write.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CL.write.1.tlog",
+    "bytes": 6708,
+    "last_write_time": "2026-08-02T13:06:14.631132+08:00",
+    "sha256": "800d6ddca714a6a9f64196d9a904c5c27ce1d14eeaed00392c49be8b6e64bd8a"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CustomBuild.command.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CustomBuild.command.1.tlog",
+    "bytes": 479,
+    "last_write_time": "2026-07-27T22:48:11.017620+08:00",
+    "sha256": "ac4bfd46972f754b38ac100c8b19db70786eb4dcfef49bcb3c54c97c850c9aa6"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CustomBuild.read.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CustomBuild.read.1.tlog",
+    "bytes": 2695,
+    "last_write_time": "2026-07-27T22:48:11.017620+08:00",
+    "sha256": "a774415c520083f4b81575758ac9eae0f6143e0ed5629aad53ac3adeffbfc7de"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CustomBuild.write.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CustomBuild.write.1.tlog",
+    "bytes": 136,
+    "last_write_time": "2026-07-27T22:48:11.017620+08:00",
+    "sha256": "c48611a3b1c7ffd5521cc5c94735f42b79c202b061340592a8329366b4eb00e6"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.command.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.command.1.tlog",
+    "bytes": 10610,
+    "last_write_time": "2026-08-02T19:29:31.607982+08:00",
+    "sha256": "3b964e5cbb92df693607641b502b1dd88b23b94e74429ec05fa51d02f8c8c0e9"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.read.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.read.1.tlog",
+    "bytes": 10292,
+    "last_write_time": "2026-08-02T19:29:31.605973+08:00",
+    "sha256": "308fcd40e60aa4435e3eb5df13995bdff983aaa461110355671933a1183d8c41"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.secondary.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.secondary.1.tlog",
+    "bytes": 1369,
+    "last_write_time": "2026-08-02T19:29:31.600981+08:00",
+    "sha256": "6122b376b0bdeddac1ecfb23f4d68b050502626816752af2132514ea191f7e65"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.write.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.write.1.tlog",
+    "bytes": 2620,
+    "last_write_time": "2026-08-02T19:29:31.601973+08:00",
+    "sha256": "5c7155ddd08fb51cdce58f131b02eaf0d39d64b2504b51914e4212a8fbb71ee9"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CL.command.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CL.command.1.tlog",
+    "bytes": 67254,
+    "last_write_time": "2026-08-02T13:06:19.141424+08:00",
+    "sha256": "bcfc41de375e4b282558055bf560ea8497a2f59b98b31e02db99675b266287aa"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\Cl.items.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\Cl.items.tlog",
+    "bytes": 1770,
+    "last_write_time": "2026-08-02T19:38:03.606222+08:00",
+    "sha256": "d759e6421f57eb2aa19e552d331e233284a0630218d6930c03905ab342801c55"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CL.read.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CL.read.1.tlog",
+    "bytes": 158610,
+    "last_write_time": "2026-08-02T13:06:19.137424+08:00",
+    "sha256": "9eaef5a9fb0e316f2a9792023611f1e2eb893f887443f4df08ba6a0bf5543c21"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CL.write.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CL.write.1.tlog",
+    "bytes": 6912,
+    "last_write_time": "2026-08-02T13:06:19.136431+08:00",
+    "sha256": "44e8ca92046b3b28484b907a78c28edd2d8a6eb47871286a1fb1d3ca8e4d7317"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CustomBuild.command.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CustomBuild.command.1.tlog",
+    "bytes": 479,
+    "last_write_time": "2026-07-27T22:48:18.559065+08:00",
+    "sha256": "ac4bfd46972f754b38ac100c8b19db70786eb4dcfef49bcb3c54c97c850c9aa6"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CustomBuild.read.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CustomBuild.read.1.tlog",
+    "bytes": 2695,
+    "last_write_time": "2026-07-27T22:48:18.559065+08:00",
+    "sha256": "a774415c520083f4b81575758ac9eae0f6143e0ed5629aad53ac3adeffbfc7de"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CustomBuild.write.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CustomBuild.write.1.tlog",
+    "bytes": 136,
+    "last_write_time": "2026-07-27T22:48:18.559065+08:00",
+    "sha256": "c48611a3b1c7ffd5521cc5c94735f42b79c202b061340592a8329366b4eb00e6"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.command.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.command.1.tlog",
+    "bytes": 10752,
+    "last_write_time": "2026-08-02T19:29:32.262981+08:00",
+    "sha256": "afd04cec432474665485c9a4b78aae12696403231c4c3f5563a50a6fcb906509"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.read.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.read.1.tlog",
+    "bytes": 10484,
+    "last_write_time": "2026-08-02T19:29:32.261908+08:00",
+    "sha256": "6275925348ff3f6cb74e6774ec3ca02fd936aacfb6f4f9b7eb4a4a8484a71eae"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.secondary.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.secondary.1.tlog",
+    "bytes": 1203,
+    "last_write_time": "2026-08-02T19:29:32.257820+08:00",
+    "sha256": "19b3a4436c60bb08154907e7e2b22817e4cacd2bbd98a2c6cde69ab8143c145d"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.write.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.write.1.tlog",
+    "bytes": 2652,
+    "last_write_time": "2026-08-02T19:29:32.257820+08:00",
+    "sha256": "c4b4c8e1c5b5d7655fcd95195de4ed784470b6576ab80879b3f8b3e08bcc3412"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator_artefacts\\Debug\\VST3\\Dynamic Resonator.vst3\\Contents\\Resources\\moduleinfo.json",
+    "recovered_path": "build-evidence\\DynamicResonator_artefacts\\Debug\\VST3\\Dynamic Resonator.vst3\\Contents\\Resources\\moduleinfo.json",
+    "bytes": 1076,
+    "last_write_time": "2026-08-02T19:38:03.552315+08:00",
+    "sha256": "a7a32e2acc27a6c006df8a1714c7e9c831d1a8dae9010e27ad56699a1c80754f"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CL.command.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CL.command.1.tlog",
+    "bytes": 204048,
+    "last_write_time": "2026-08-02T19:29:30.488304+08:00",
+    "sha256": "f035f730bcd986e16b1b0f28f72a3a3037b762bedec5fa21319c60c0f43eed8c"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Cl.items.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Cl.items.tlog",
+    "bytes": 4305,
+    "last_write_time": "2026-08-02T19:38:03.372880+08:00",
+    "sha256": "43307b05bbe4e5f40034c10871d6f7e3025e070332ca0ae9b1959615878cd654"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CL.write.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CL.write.1.tlog",
+    "bytes": 25908,
+    "last_write_time": "2026-08-02T19:29:30.480327+08:00",
+    "sha256": "e952a666bfb804d8dea672c0ad6017256a80305b4387c6d498ef6cc6fc3f3d95"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CustomBuild.command.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CustomBuild.command.1.tlog",
+    "bytes": 1071,
+    "last_write_time": "2026-08-02T13:05:38.602318+08:00",
+    "sha256": "af500295f52903995f077d216ed89330620198e6f6d7eab2cd1affae8c1c35b6"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CustomBuild.read.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CustomBuild.read.1.tlog",
+    "bytes": 2916,
+    "last_write_time": "2026-08-02T13:05:38.602318+08:00",
+    "sha256": "fc68120e6be0f51964ee1a592df1e368dff55c529ce5fdd70ea9c75744c40aee"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CustomBuild.write.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CustomBuild.write.1.tlog",
+    "bytes": 355,
+    "last_write_time": "2026-08-02T13:05:38.602318+08:00",
+    "sha256": "edae9e11482f8563dfc46ca18bc5d8c16b3eceecbbc7a2975ef333c086ae06f8"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\DynamicResonator.lastbuildstate",
+    "recovered_path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\DynamicResonator.lastbuildstate",
+    "bytes": 178,
+    "last_write_time": "2026-08-02T19:38:03.373879+08:00",
+    "sha256": "bc6587098ba0f516a6b0098908ee885a31b17484fcfda20694ee7afa6696816b"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Lib-link.read.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Lib-link.read.1.tlog",
+    "bytes": 9784,
+    "last_write_time": "2026-08-02T19:29:31.116188+08:00",
+    "sha256": "b53cfdc9da93d6cea6165956dae0bef07d6f260e89b0fc85e1ab9dac3165dc82"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Lib-link.write.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Lib-link.write.1.tlog",
+    "bytes": 5022,
+    "last_write_time": "2026-08-02T19:29:31.115199+08:00",
+    "sha256": "d06ef75223c50ccc9d65d9d4909d20b34d8068283126d89068fe50baf4fb5e57"
+  },
+  {
+    "original": "[workspace]\\Dynamic Resonator\\Build\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Lib.command.1.tlog",
+    "recovered_path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Lib.command.1.tlog",
+    "bytes": 7584,
+    "last_write_time": "2026-08-02T19:29:31.117188+08:00",
+    "sha256": "5196943c25dc03560b9b1d6a9fd5cfd7104e7dce0925918be579781870f766cf"
+  }
+]

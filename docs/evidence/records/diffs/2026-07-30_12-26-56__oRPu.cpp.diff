@@ -1,0 +1,11 @@
+--- 2026-07-30_12-24-49__GgKS.cpp
++++ 2026-07-30_12-26-56__oRPu.cpp
+@@ -655,7 +655,7 @@
+             bandLevelLbl[b].setBounds (sr.withTop (belowTxt).withHeight (14).reduced (4, 0));
+         }
+ 
+-        bandDirBtn[b].setBounds (col.withTop (yPos).withHeight (20).reduced (6, 0));
++        bandDirBtn[b].setBounds (col.withTop (yPos).withHeight (20).reduced (9, 0));
+     }
+ 
+     // === Global controls (Dry, Wet, Pre, Post) ===

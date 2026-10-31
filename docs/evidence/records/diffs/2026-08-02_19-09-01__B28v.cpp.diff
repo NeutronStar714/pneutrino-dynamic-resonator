@@ -1,0 +1,130 @@
+--- 2026-07-31_00-44-16__wyjl.cpp
++++ 2026-08-02_19-09-01__B28v.cpp
+@@ -122,6 +122,46 @@
+     g.setColour (muteText);
+     g.setFont (juce::Font (juce::FontOptions (10.0f)));
+     g.drawFittedText ("Level", bounds.reduced (6, 0), juce::Justification::left, 1);
++
++    g.setColour (textColour);
++    g.drawFittedText (juce::String (level, 2), bounds.reduced (6, 0),
++                      juce::Justification::right, 1);
++}
++
++//==============================================================================
++// PerceivedLoudnessMeter
++//==============================================================================
++PerceivedLoudnessMeter::PerceivedLoudnessMeter() {}
++
++void PerceivedLoudnessMeter::paint (juce::Graphics& g)
++{
++    const auto bounds = getLocalBounds().reduced (4);
++    const auto w = bounds.getWidth();
++    const auto h = bounds.getHeight();
++
++    g.setColour (darkBg);
++    g.fillRoundedRectangle (bounds.toFloat(), 3.0f);
++
++    // Dynamic Range window band
++    const float drX1 = bounds.getX() + 2.0f + drMin * float (w - 4);
++    const float drX2 = bounds.getX() + 2.0f + drMax * float (w - 4);
++    g.setColour (accentColour.withAlpha (0.35f));
++    g.fillRoundedRectangle (drX1, bounds.getY() + 2.0f,
++                            std::max (drX2 - drX1, 2.0f), float (h - 4), 2.0f);
++
++    // Level fill
++    const float level = juce::jlimit (0.0f, 1.0f, envelopeLevel);
++    const int fillW = int (level * float (w - 4));
++    if (fillW > 0)
++    {
++        g.setColour (accentColour);
++        g.fillRoundedRectangle (bounds.getX() + 2.0f, bounds.getY() + 2.0f,
++                                float (fillW), float (h - 4), 2.0f);
++    }
++
++    g.setColour (muteText);
++    g.setFont (juce::Font (juce::FontOptions (10.0f)));
++    g.drawFittedText ("Perceived", bounds.reduced (6, 0), juce::Justification::left, 1);
+ 
+     g.setColour (textColour);
+     g.drawFittedText (juce::String (level, 2), bounds.reduced (6, 0),
+@@ -619,10 +659,11 @@
+ 
+     // --- Displays ---
+     addAndMakeVisible (loudnessMeter);
++    addAndMakeVisible (perceivedMeter);
+     addAndMakeVisible (filterResponse);
+ 
+     startTimerHz (30);
+-    setSize (520, 827);
++    setSize (520, 823);
+     setResizable (false, false);
+ }
+ 
+@@ -660,7 +701,7 @@
+     const int colKnobH  = 65;
+     const int colHeader = 22;
+     const int colRow    = colKnobH + 14 + 4;    // 83
+-    const int colH      = colHeader + colRow * 3 + 42;  // 311
++    const int colH      = colHeader + colRow * 3 + 36;  // 305
+     const int colW      = (getWidth() - 24) / 4;
+     const int boxY      = 42;  // 2px above header bottom
+     const float margin  = 7.0f;
+@@ -681,10 +722,10 @@
+     auto area = getLocalBounds().reduced (12);
+ 
+     // === Header ===
+-    nameLabel.setBounds (area.removeFromTop (40).withY (6).reduced (0, 4));
++    nameLabel.setBounds (area.removeFromTop (34).withY (6).reduced (0, 4));
+ 
+     // === Attribution (always at bottom) ===
+-    attributionLabel.setBounds (area.removeFromBottom (22).withY (796) .reduced (4, 0));
++    attributionLabel.setBounds (area.removeFromBottom (18).withY (770) .reduced (4, 0));
+ 
+     // === 4-band columns (3 knobs + dir switch, PEAK bands have vertical level slider) ===
+     const int colKnobH  = 65;
+@@ -752,8 +793,8 @@
+     placeKnob6 (attackKnob,        attackLbl,        4);
+     placeKnob6 (releaseKnob,       releaseLbl,       5);
+ 
+-    // === Row 2: Dynamic Range slider + RMS/AM toggle ===
+-    const int row2H = 55;
++    // === Row 2: Dynamic Range slider + RMS/AM toggle (compact) ===
++    const int row2H = 43;
+     auto row2Area = area.removeFromTop (row2H).reduced (4, 4);
+ 
+     const int nbW    = 40;      // number box width (matches Dry knob's text box)
+@@ -774,10 +815,11 @@
+ 
+     // Mode toggle
+     modeBtn.setBounds (row2Area.withLeft (row2Area.getRight() - btnW).withWidth (btnW)
+-                                .reduced (6, 8));
+-
+-    // === Loudness meter ===
+-    loudnessMeter.setBounds (area.removeFromTop (26).reduced (4, 2));
++                                .reduced (6, 6));
++
++    // === Monitors: Perceived (with DR window) + Level (compact) ===
++    perceivedMeter.setBounds (area.removeFromTop (22).reduced (4, 1));
++    loudnessMeter.setBounds (area.removeFromTop (22).reduced (4, 1));
+ 
+     // === Filter response (all remaining space) ===
+     filterResponse.setBounds (area.reduced (4, 2));
+@@ -812,14 +854,17 @@
+ //==============================================================================
+ void DynamicResonatorAudioEditor::timerCallback()
+ {
+-    const float envelope = processorRef.getCurrentEnvelope();
++    const float envelope = processorRef.getCurrentEnvelope();       // post-DR
++    const float perceived = processorRef.getPerceivedLoudness();    // pre-DR raw
+     loudnessMeter.setLevel (envelope);
++    perceivedMeter.setLevel (perceived);
+ 
+     // Sync DR slider from parameter values (in case preset was loaded)
+     const float drMin = *processorRef.apvts.getRawParameterValue (DynamicResonatorAudioProcessor::paramDRMinID);
+     const float drMax = *processorRef.apvts.getRawParameterValue (DynamicResonatorAudioProcessor::paramDRMaxID);
+     drSlider.setMinValue (drMin, juce::dontSendNotification);
+     drSlider.setMaxValue (drMax, juce::dontSendNotification);
++    perceivedMeter.setDRRange (drMin, drMax);
+     // Only update DR number boxes when not being edited
+     if (! drMinVal.isBeingEdited()) drMinVal.setText (juce::String (drMin, 3), juce::dontSendNotification);
+     if (! drMaxVal.isBeingEdited()) drMaxVal.setText (juce::String (drMax, 3), juce::dontSendNotification);

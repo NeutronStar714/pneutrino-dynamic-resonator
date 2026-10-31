@@ -1,0 +1,11 @@
+--- 2026-07-31_00-41-11__JSUl.h
++++ 2026-07-31_00-43-18__DFFC.h
+@@ -20,7 +20,7 @@
+ 
+     juce::Font getTextButtonFont (juce::TextButton&, int) override
+     {
+-        return juce::Font (juce::FontOptions ("Courier New", 16.0f, juce::Font::bold));
++        return juce::Font (juce::FontOptions ("Courier New", 20.0f, juce::Font::bold));
+     }
+ 
+ private:

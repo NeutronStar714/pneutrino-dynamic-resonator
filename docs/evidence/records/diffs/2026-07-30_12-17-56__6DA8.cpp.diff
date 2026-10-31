@@ -1,0 +1,31 @@
+--- 2026-07-30_12-07-28__Runc.cpp
++++ 2026-07-30_12-17-56__6DA8.cpp
+@@ -584,14 +584,15 @@
+     const int colH      = colHeader + colRow * 3 + 24;  // 295
+     const int colW      = (getWidth() - 24) / 4;
+     const int boxY      = 52;  // 12 reduced + 40 header
+-    const float margin  = 10.0f;
++    const float margin  = 2.5f;
+     const float radius  = 10.0f;
++    const float borderW = 2.5f;
+ 
+     for (int b = 0; b < 4; ++b)
+     {
+         auto box = juce::Rectangle<float> (12.0f + b * colW, boxY, colW, colH);
+         g.setColour (boxColours[b]);
+-        g.drawRoundedRectangle (box.reduced (margin), radius, 1.0f);
++        g.drawRoundedRectangle (box.reduced (margin), radius, borderW);
+     }
+ 
+     // Separator between band columns and global controls
+@@ -645,8 +646,8 @@
+         // PEAK bands: vertical level slider on the right side
+         if (isPeak)
+         {
+-            const int sliderH = 2 * colRow + colKnobH - 3;  // text box bottom aligns with Sens text box
+-            const int belowTxt = col.getY() + sliderH;  // label below component = same Y as Sens label
++            const int sliderH = 2 * colRow + colKnobH - 2;  // text box bottom aligns with Sens text box
++            const int belowTxt = col.getY() + sliderH + 2;  // label below component = same Y as Sens label
+             auto sr = col.withLeft (col.getX() + colW - sliderW - 15)
+                         .withTop (col.getY())
+                         .withWidth (sliderW).withHeight (sliderH);

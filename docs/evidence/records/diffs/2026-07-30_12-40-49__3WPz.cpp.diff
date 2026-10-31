@@ -1,0 +1,11 @@
+--- 2026-07-30_12-40-19__99GY.cpp
++++ 2026-07-30_12-40-49__3WPz.cpp
+@@ -648,7 +648,7 @@
+             bandLevelLbl[b].setBounds (sr.withTop (belowTxt).withHeight (14).reduced (4, 0));
+         }
+ 
+-        bandDirBtn[b].setBounds (col.withTop (yPos).withHeight (20).reduced (9, 0));
++        bandDirBtn[b].setBounds (col.withTop (yPos).withHeight (20).reduced (11, 0));
+     }
+ 
+     // === Global controls (Dry, Wet, Pre, Post) — same size as band knobs ===

@@ -1,0 +1,11 @@
+--- 2026-07-30_13-25-49__MAsy.cpp
++++ 2026-07-30_13-26-22__g1Iq.cpp
+@@ -604,7 +604,7 @@
+     nameLabel.setBounds (area.removeFromTop (40).withY (6).reduced (0, 4));
+ 
+     // === Attribution (always at bottom) ===
+-    attributionLabel.setBounds (area.removeFromBottom (22).withY (810) .reduced (4, 0));
++    attributionLabel.setBounds (area.removeFromBottom (22).withY (333) .reduced (4, 0));
+ 
+     // === 4-band columns (3 knobs + dir switch, PEAK bands have vertical level slider) ===
+     const int colKnobH  = 65;

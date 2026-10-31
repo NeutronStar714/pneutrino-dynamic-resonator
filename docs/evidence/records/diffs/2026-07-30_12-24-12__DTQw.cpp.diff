@@ -1,0 +1,14 @@
+--- 2026-07-30_12-17-56__6DA8.cpp
++++ 2026-07-30_12-24-12__DTQw.cpp
+@@ -581,9 +581,9 @@
+     const int colKnobH  = 65;
+     const int colHeader = 22;
+     const int colRow    = colKnobH + 14 + 4;    // 83
+-    const int colH      = colHeader + colRow * 3 + 24;  // 295
++    const int colH      = colHeader + colRow * 3 + 32;  // 303
+     const int colW      = (getWidth() - 24) / 4;
+-    const int boxY      = 52;  // 12 reduced + 40 header
++    const int boxY      = 48;  // 8 reduced + 40 header
+     const float margin  = 2.5f;
+     const float radius  = 10.0f;
+     const float borderW = 2.5f;

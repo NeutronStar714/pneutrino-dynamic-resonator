@@ -1,0 +1,10 @@
+^[workspace]\DYNAMIC RESONATOR\CMAKELISTS.TXT
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-S[workspace]/Dynamic Resonator" "-B[workspace]/Dynamic Resonator/Build" --check-stamp-file "[workspace]/Dynamic Resonator/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

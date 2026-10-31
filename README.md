@@ -19,10 +19,10 @@ Version **1.3.0** is the existing project declaration. [Testing and limitations]
 
 ## Development record
 
-The original work is documented by surviving July 27–August 2, 2026 prompts and saved editor revisions. [Selected evidence](docs/evidence/README.md) explains the design changes and a recovered bug-fix diff. [CHANGELOG.md](CHANGELOG.md) labels its historical entries as reconstructed. No original project Git history was recovered; this source import starts present-day version control.
+The [development process](docs/evidence/README.md) includes a summary and all recovered project records: 114 prompts, 10 commands, 36 saved UI-file revisions and 35 build records. The main development ran from July 27 to August 2, 2026. [CHANGELOG.md](CHANGELOG.md) labels its historical entries as reconstructed. No original project Git history was recovered; version control began with the source import.
 
 ## Source and dependencies
 
-All four project-owned C++ files and the CMake build configuration are included. JUCE is referenced as an upstream submodule at an exact commit; use the recursive clone instructions in [BUILDING.md](BUILDING.md). No machine-specific build outputs or raw private conversation archive are included.
+All four project-owned C++ files and the CMake build configuration are included. JUCE is referenced as an upstream submodule at an exact commit; use the recursive clone instructions in [BUILDING.md](BUILDING.md). Compiled binaries and intermediate build products are excluded. The recovered development records include the full surviving project prompt log, with personal directory paths redacted.
 
 The repository's existing [MIT license](LICENSE) is retained for project-owned material. JUCE and its bundled dependencies retain their own terms; see [third-party notices](THIRD_PARTY_NOTICES.md).

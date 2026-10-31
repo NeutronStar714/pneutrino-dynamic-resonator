@@ -1,0 +1,656 @@
+{
+  "recovery_date": "2026-10-31",
+  "historical_timezone": "Asia/Shanghai (UTC+08:00)",
+  "files": [
+    {
+      "path": "adjacent-spacer-context.jsonl",
+      "bytes": 2611,
+      "sha256": "ff02e53c4b2d3b163d2e142b1cc30a0af69351a7c1cef90d4410902260076681"
+    },
+    {
+      "path": "build-evidence\\CMakeCache.txt",
+      "bytes": 16979,
+      "sha256": "08dc979ee4109c248c200b91f5fc6f23529eec278525a8709fe5c28a9a73d68b"
+    },
+    {
+      "path": "build-evidence\\CMakeFiles\\CMakeConfigureLog.yaml",
+      "bytes": 97284,
+      "sha256": "746dac28ecb47f3f3f028a210070b3044841e5952912a49aff0e495aec165c50"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CL.command.1.tlog",
+      "bytes": 204048,
+      "sha256": "f035f730bcd986e16b1b0f28f72a3a3037b762bedec5fa21319c60c0f43eed8c"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Cl.items.tlog",
+      "bytes": 4305,
+      "sha256": "43307b05bbe4e5f40034c10871d6f7e3025e070332ca0ae9b1959615878cd654"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CL.write.1.tlog",
+      "bytes": 25908,
+      "sha256": "e952a666bfb804d8dea672c0ad6017256a80305b4387c6d498ef6cc6fc3f3d95"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CustomBuild.command.1.tlog",
+      "bytes": 1071,
+      "sha256": "af500295f52903995f077d216ed89330620198e6f6d7eab2cd1affae8c1c35b6"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CustomBuild.read.1.tlog",
+      "bytes": 2916,
+      "sha256": "fc68120e6be0f51964ee1a592df1e368dff55c529ce5fdd70ea9c75744c40aee"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\CustomBuild.write.1.tlog",
+      "bytes": 355,
+      "sha256": "edae9e11482f8563dfc46ca18bc5d8c16b3eceecbbc7a2975ef333c086ae06f8"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\DynamicResonator.lastbuildstate",
+      "bytes": 178,
+      "sha256": "bc6587098ba0f516a6b0098908ee885a31b17484fcfda20694ee7afa6696816b"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Lib-link.read.1.tlog",
+      "bytes": 9784,
+      "sha256": "b53cfdc9da93d6cea6165956dae0bef07d6f260e89b0fc85e1ab9dac3165dc82"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Lib-link.write.1.tlog",
+      "bytes": 5022,
+      "sha256": "d06ef75223c50ccc9d65d9d4909d20b34d8068283126d89068fe50baf4fb5e57"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator.dir\\Debug\\DynamicResonator.tlog\\Lib.command.1.tlog",
+      "bytes": 7584,
+      "sha256": "5196943c25dc03560b9b1d6a9fd5cfd7104e7dce0925918be579781870f766cf"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_artefacts\\Debug\\VST3\\Dynamic Resonator.vst3\\Contents\\Resources\\moduleinfo.json",
+      "bytes": 1076,
+      "sha256": "a7a32e2acc27a6c006df8a1714c7e9c831d1a8dae9010e27ad56699a1c80754f"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CL.command.1.tlog",
+      "bytes": 67254,
+      "sha256": "bcfc41de375e4b282558055bf560ea8497a2f59b98b31e02db99675b266287aa"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\Cl.items.tlog",
+      "bytes": 1770,
+      "sha256": "d759e6421f57eb2aa19e552d331e233284a0630218d6930c03905ab342801c55"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CL.read.1.tlog",
+      "bytes": 158610,
+      "sha256": "9eaef5a9fb0e316f2a9792023611f1e2eb893f887443f4df08ba6a0bf5543c21"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CL.write.1.tlog",
+      "bytes": 6912,
+      "sha256": "44e8ca92046b3b28484b907a78c28edd2d8a6eb47871286a1fb1d3ca8e4d7317"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CustomBuild.command.1.tlog",
+      "bytes": 479,
+      "sha256": "ac4bfd46972f754b38ac100c8b19db70786eb4dcfef49bcb3c54c97c850c9aa6"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CustomBuild.read.1.tlog",
+      "bytes": 2695,
+      "sha256": "a774415c520083f4b81575758ac9eae0f6143e0ed5629aad53ac3adeffbfc7de"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\CustomBuild.write.1.tlog",
+      "bytes": 136,
+      "sha256": "c48611a3b1c7ffd5521cc5c94735f42b79c202b061340592a8329366b4eb00e6"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.command.1.tlog",
+      "bytes": 10752,
+      "sha256": "afd04cec432474665485c9a4b78aae12696403231c4c3f5563a50a6fcb906509"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.read.1.tlog",
+      "bytes": 10484,
+      "sha256": "6275925348ff3f6cb74e6774ec3ca02fd936aacfb6f4f9b7eb4a4a8484a71eae"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.secondary.1.tlog",
+      "bytes": 1203,
+      "sha256": "19b3a4436c60bb08154907e7e2b22817e4cacd2bbd98a2c6cde69ab8143c145d"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_Standalone.dir\\Debug\\DynamicR.06F2BCC4.tlog\\link.write.1.tlog",
+      "bytes": 2652,
+      "sha256": "c4b4c8e1c5b5d7655fcd95195de4ed784470b6576ab80879b3f8b3e08bcc3412"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CL.command.1.tlog",
+      "bytes": 67766,
+      "sha256": "bf5ebbbc23e1ab86edd52cda431519fa65b1f7c46def7faf1473b0d84fd5f25b"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\Cl.items.tlog",
+      "bytes": 1722,
+      "sha256": "d336c26a0f0aee32e6c74dc40a4d92558e8cc0ea89f08a68b1ee84b6b0ced054"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CL.read.1.tlog",
+      "bytes": 180170,
+      "sha256": "29b0f36619be082a7f28a248f463eabe18adac8769b76e1b7843191a32ebbb65"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CL.write.1.tlog",
+      "bytes": 6708,
+      "sha256": "800d6ddca714a6a9f64196d9a904c5c27ce1d14eeaed00392c49be8b6e64bd8a"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CustomBuild.command.1.tlog",
+      "bytes": 479,
+      "sha256": "ac4bfd46972f754b38ac100c8b19db70786eb4dcfef49bcb3c54c97c850c9aa6"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CustomBuild.read.1.tlog",
+      "bytes": 2695,
+      "sha256": "a774415c520083f4b81575758ac9eae0f6143e0ed5629aad53ac3adeffbfc7de"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\CustomBuild.write.1.tlog",
+      "bytes": 136,
+      "sha256": "c48611a3b1c7ffd5521cc5c94735f42b79c202b061340592a8329366b4eb00e6"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.command.1.tlog",
+      "bytes": 10610,
+      "sha256": "3b964e5cbb92df693607641b502b1dd88b23b94e74429ec05fa51d02f8c8c0e9"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.read.1.tlog",
+      "bytes": 10292,
+      "sha256": "308fcd40e60aa4435e3eb5df13995bdff983aaa461110355671933a1183d8c41"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.secondary.1.tlog",
+      "bytes": 1369,
+      "sha256": "6122b376b0bdeddac1ecfb23f4d68b050502626816752af2132514ea191f7e65"
+    },
+    {
+      "path": "build-evidence\\DynamicResonator_VST3.dir\\Debug\\DynamicR.20E8F7B3.tlog\\link.write.1.tlog",
+      "bytes": 2620,
+      "sha256": "5c7155ddd08fb51cdce58f131b02eaf0d39d64b2504b51914e4212a8fbb71ee9"
+    },
+    {
+      "path": "build-evidence-manifest.json",
+      "bytes": 15490,
+      "sha256": "03a628e143fe1a1d12e25d6cfb556caf04bd1f18ec0c76dfa6f3cde4dae7fed7"
+    },
+    {
+      "path": "current-source\\CMakeLists.txt",
+      "bytes": 1640,
+      "sha256": "7b7efa66578f6aecf108d010f72aec44fd3f4bef30b129f7c137586547f744f6"
+    },
+    {
+      "path": "current-source\\defaults.txt",
+      "bytes": 729,
+      "sha256": "560326b3246b79dab496d74cdcd111c5561392e71c17ee3c9978a2a784dcd0e4"
+    },
+    {
+      "path": "current-source\\Source\\PluginEditor.cpp",
+      "bytes": 42275,
+      "sha256": "6cde427e3596a1e66dfe2b8f8a3120bd17bbcec9b7c27bdd4ac2a30ac30c929c"
+    },
+    {
+      "path": "current-source\\Source\\PluginEditor.h",
+      "bytes": 6821,
+      "sha256": "4443c8b4be218820ff58dac49f5642fd244be859283c7998ce22b48e193f5e4f"
+    },
+    {
+      "path": "current-source\\Source\\PluginProcessor.cpp",
+      "bytes": 16119,
+      "sha256": "bb14f90893f2e8e0e14c1a3cae1c76b51aa1007b807bb52cde61ec85e54d11f5"
+    },
+    {
+      "path": "current-source\\Source\\PluginProcessor.h",
+      "bytes": 8109,
+      "sha256": "ec5e503f94428efc8c51c2bbf0ea4f3ea57b4ee03d9803c61985df740c93ebc7"
+    },
+    {
+      "path": "current-source-manifest.json",
+      "bytes": 1915,
+      "sha256": "68c70b1e894a96d628902c09939b7afeeff671f38cc99822c3aece3d146f9abb"
+    },
+    {
+      "path": "dependency-provenance.json",
+      "bytes": 540,
+      "sha256": "774acc946d401ea00fbc403d44a075c14fcc380f5056fc0668fce9cd3f47ba08"
+    },
+    {
+      "path": "diffs\\2026-07-30_12-00-15__mRXo.cpp.diff",
+      "bytes": 2374,
+      "sha256": "048584c3842b92d0daaf9ecd99be1f6e6c748df375c5f9d701132f98f8019264"
+    },
+    {
+      "path": "diffs\\2026-07-30_12-07-13__ov8J.cpp.diff",
+      "bytes": 1908,
+      "sha256": "a549afff95d12e7b8feb13812e829e8d0a7c9dbe8808a95109fc753fc9b6a398"
+    },
+    {
+      "path": "diffs\\2026-07-30_12-07-28__Runc.cpp.diff",
+      "bytes": 630,
+      "sha256": "292005e7dd0d2f51d7b7b9edc812dae4ca314d9765b43cad2adc5527df77ddd2"
+    },
+    {
+      "path": "diffs\\2026-07-30_12-17-56__6DA8.cpp.diff",
+      "bytes": 1527,
+      "sha256": "8e03e6dc2480262470f85784983c3614d7de9b2f63983ab6829a2367bde2d9e6"
+    },
+    {
+      "path": "diffs\\2026-07-30_12-24-12__DTQw.cpp.diff",
+      "bytes": 612,
+      "sha256": "ce205ed6f5624fd9edeb6d1efccb5911429f433f4a4b7adf2bfa76ae9eab23dc"
+    },
+    {
+      "path": "diffs\\2026-07-30_12-24-49__GgKS.cpp.diff",
+      "bytes": 405,
+      "sha256": "324b7812c82b939e3bd643a2af15ea97786c9301fa7c15caf9aca39fbe85a0ef"
+    },
+    {
+      "path": "diffs\\2026-07-30_12-26-56__oRPu.cpp.diff",
+      "bytes": 442,
+      "sha256": "815e8617b27c763069090946437e82c8f052780ac65f156f9a6add8e56dc86c5"
+    },
+    {
+      "path": "diffs\\2026-07-30_12-40-19__99GY.cpp.diff",
+      "bytes": 2635,
+      "sha256": "37ebaf2c1ad3216b56ea204d6107e7f117ea24b1fd7024c7ff8a88046f9db6e4"
+    },
+    {
+      "path": "diffs\\2026-07-30_12-40-49__3WPz.cpp.diff",
+      "bytes": 471,
+      "sha256": "5c3330bedf949b8eb29c44c1f387ded6060bfcc91327aece91d2aaac1a3af9e2"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-19-01__2Vkf.cpp.diff",
+      "bytes": 3156,
+      "sha256": "1f124df0212ca9cce19b2dc44360baf0d361989a76feda698af7d2fb2b8b8976"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-23-04__SP62.cpp.diff",
+      "bytes": 672,
+      "sha256": "04b34fa67044978951aeaeae9fcfbbd303152cf0e00b644dbdf375ebfbd2a97b"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-24-09__0qFh.cpp.diff",
+      "bytes": 529,
+      "sha256": "c909f99ce8bbeb65a4eb777ea8cb1e8082c7f54dc1b4041f2dc7b13d22253cdf"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-24-28__4Ccp.cpp.diff",
+      "bytes": 531,
+      "sha256": "5ef741f84745370793dad8bd91c03aab9de6e3c33086a41bff4801f5beafc92d"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-25-49__MAsy.cpp.diff",
+      "bytes": 531,
+      "sha256": "56b79e0abe94c4e91df795882531a12a99e6e5628bd9c68e14b19ccb7c24cc35"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-26-22__g1Iq.cpp.diff",
+      "bytes": 531,
+      "sha256": "7bf086c244cd71f90ff566b5bbd9700f293865c0197135a74f845ed786e3fbd0"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-26-57__qgnn.cpp.diff",
+      "bytes": 531,
+      "sha256": "850cdb8c642ddebedf8ea44e10ea7d24e7d88bb927ecbcc4a27d8545c3000a3b"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-28-13__J4Di.cpp.diff",
+      "bytes": 531,
+      "sha256": "c7fb7141e61b27e0635defec90915655c5cd17ae3a5e3c750ebaec6ddf7f1344"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-28-59__ZGqg.cpp.diff",
+      "bytes": 531,
+      "sha256": "3a1c9ade5e172bf902805ebdc3dc2be689b88af966e920c8a3da4f212f127efa"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-29-27__yyXT.cpp.diff",
+      "bytes": 531,
+      "sha256": "b9b8e41aea661efc6cb01830d353ab228676e3a6c2dc19b5e4e37cb9670f85a2"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-29-55__9vcQ.cpp.diff",
+      "bytes": 531,
+      "sha256": "9b96fef4ce4ffb3fe91abaf5ce4773d6a201aba7bc1304a571988ad26a53a839"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-30-21__Jti0.cpp.diff",
+      "bytes": 531,
+      "sha256": "b7523601f5841fa2ad661068712b87b034b5c541b735a1f2fd6dc68b8a4169f0"
+    },
+    {
+      "path": "diffs\\2026-07-30_13-30-56__97GZ.cpp.diff",
+      "bytes": 531,
+      "sha256": "a994c20aa16d705cc44ffc3b0f7eae3bf4b3f2c2b156cb884423adbe1a6414a5"
+    },
+    {
+      "path": "diffs\\2026-07-31_00-41-29__8D1Z.cpp.diff",
+      "bytes": 14989,
+      "sha256": "f130787618df16b86f8fa8a031f586472b4120fbd6e0bc4da6f4bb3643d26acc"
+    },
+    {
+      "path": "diffs\\2026-07-31_00-43-04__qixV.cpp.diff",
+      "bytes": 531,
+      "sha256": "aee1c350d2c27a7f8de46aa98137b2dd3225b57dff93b058822ca33f4d75affc"
+    },
+    {
+      "path": "diffs\\2026-07-31_00-43-18__DFFC.h.diff",
+      "bytes": 367,
+      "sha256": "094972fc13f8719dab0cfb7bcce571f520b612f0e51ea7dac7651ae45fc66e40"
+    },
+    {
+      "path": "diffs\\2026-07-31_00-44-16__wyjl.cpp.diff",
+      "bytes": 531,
+      "sha256": "315b0c46f276334d636a83d7dbc14149680d5742af208fd5ab180853d65b4532"
+    },
+    {
+      "path": "diffs\\2026-08-02_19-09-01__B28v.cpp.diff",
+      "bytes": 5731,
+      "sha256": "8d5fe2e1e8eb63a43772334f585741377a392ec9b0615c64eab9b8f17a44e10b"
+    },
+    {
+      "path": "diffs\\2026-08-02_19-13-34__gecI.cpp.diff",
+      "bytes": 531,
+      "sha256": "f50a5e86dc8631b68a7fa3a730a2b54d1d7d16bdcc75996415bcaa66fa8b0e2c"
+    },
+    {
+      "path": "diffs\\2026-08-02_19-15-53__0ESZ.cpp.diff",
+      "bytes": 907,
+      "sha256": "a46ca8221a527b22410d9763b5ddcba659a5d65d2d3e5e06802b060d84d8ccff"
+    },
+    {
+      "path": "diffs\\2026-08-02_19-17-18__jXDz.cpp.diff",
+      "bytes": 1104,
+      "sha256": "589f92712bd9c5088fa8d4f5a6bd035f4857f64eee624492d71aadcd5a084888"
+    },
+    {
+      "path": "diffs\\2026-08-02_19-20-27__dPcm.cpp.diff",
+      "bytes": 533,
+      "sha256": "100b37d5204f926034ba3fda1d69566cef18f62ba7094b0ef1ad21bdc027d2ef"
+    },
+    {
+      "path": "diffs\\2026-08-02_19-21-18__Dg3K.cpp.diff",
+      "bytes": 665,
+      "sha256": "82067109ffb96c73356f3342d23add3a18d18f156a338f452b23785b0e6034a2"
+    },
+    {
+      "path": "diffs\\2026-08-02_19-21-30__89Aw.cpp.diff",
+      "bytes": 488,
+      "sha256": "123d9990c9b1d80843a4e40676bd395e5c436267245f96fa9057606f5876f109"
+    },
+    {
+      "path": "diffs\\2026-08-02_19-22-05__70Wj.cpp.diff",
+      "bytes": 687,
+      "sha256": "ed5d4c8177a281f679e13a16199cc52e4d72304c6ec1231222e9b984c51b2205"
+    },
+    {
+      "path": "last-snapshot-to-current-PluginEditor.cpp.diff",
+      "bytes": 841,
+      "sha256": "c01b931aa6a83184e3fdaaa63200d490233f8b44831039f3a15c0dc0950ed3ad"
+    },
+    {
+      "path": "last-snapshot-to-current-PluginEditor.h.diff",
+      "bytes": 1442,
+      "sha256": "c73bb9510bb75d66a6f7526f3d2a45b5fec72c90e466a6b0a2081b1d1e9c5465"
+    },
+    {
+      "path": "original-history-lines.jsonl",
+      "bytes": 51518,
+      "sha256": "e73bf49de5a38dca6f4afeb272268fa4252cb34c36d45293eee14d4466760cd7"
+    },
+    {
+      "path": "prompt-records.md",
+      "bytes": 46042,
+      "sha256": "95b10a427ed08401167cd5ce73a80879f69fb2626f3adee790385ca5951f45d1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4305,
+      "sha256": "11bab46931e15d8a1f037d05323622cb403b9253c7d0f1f4133cf7dcfeee4e55"
+    },
+    {
+      "path": "recovered-prompts.jsonl",
+      "bytes": 64420,
+      "sha256": "07d9bd8550198362d8b0d47cd6c8c1aa03c23c0f4d881a9444127b3ca35e7424"
+    },
+    {
+      "path": "related-project-notes\\pneutrino-series.md",
+      "bytes": 2228,
+      "sha256": "8afb036dcbbeef25f3ffc8204a655496e2e1cf0b9f9e1f50dfed92d5123c8204"
+    },
+    {
+      "path": "related-project-notes\\pneutrino-ui-language.md",
+      "bytes": 3936,
+      "sha256": "5218f5d6476acc14d9936aceb2ad0728ce9b87935068a517d317e5119e48e7cb"
+    },
+    {
+      "path": "related-project-references.jsonl",
+      "bytes": 2306,
+      "sha256": "48e2f49463b0eeb4dc1333d6578bc18a70cec695b3391e54504e683eb5cc5e4c"
+    },
+    {
+      "path": "snapshot-index.md",
+      "bytes": 7143,
+      "sha256": "1b0ca36fcd31718dd4ac3d9eaeaeeb2284294dbc26fcca194be9c615e1618cf5"
+    },
+    {
+      "path": "snapshot-manifest.csv",
+      "bytes": 9831,
+      "sha256": "72076f17a3f629be929d55c0ad86f50dbc46e463c07137571a133c8766a2a267"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_11-50-44__qkyk.cpp",
+      "bytes": 31960,
+      "sha256": "9a23a5c29fecdb036108eb8c9e58e95e14b7a97901b7c1d0476cf2deaf55906d"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_12-00-15__mRXo.cpp",
+      "bytes": 32623,
+      "sha256": "9b30734318ad61368ac6953c9b89ed4ba26401915efd49d53aee9dc896019801"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_12-07-13__ov8J.cpp",
+      "bytes": 32841,
+      "sha256": "1f416ef621862ef7a9d50e6ef3ec6c0aca2f97b6cfd79aa3186b9ed28ad6553b"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_12-07-28__Runc.cpp",
+      "bytes": 32841,
+      "sha256": "98f149de256ceacaf1279f7e989243d5bd8a69ee737e005c02093106f42bd257"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_12-17-56__6DA8.cpp",
+      "bytes": 32879,
+      "sha256": "e6727b8fd256b9667ea16ea4c0e1d9b6ad3cda5861aadc6fe82ce52c2a482d2b"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_12-24-12__DTQw.cpp",
+      "bytes": 32878,
+      "sha256": "e7d1b9866e572326577b002449328cc361ada1ddcff18e3c3fbdb6ac5c887bee"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_12-24-49__GgKS.cpp",
+      "bytes": 32878,
+      "sha256": "9a36b7454563348b537c718e2d9417806685cd05f941bacc18f665892d6d689e"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_12-26-56__oRPu.cpp",
+      "bytes": 32878,
+      "sha256": "8e9260b10914629229805edcd8deb1c7a3737feee4bb99ac08a27336131d906f"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_12-40-19__99GY.cpp",
+      "bytes": 32670,
+      "sha256": "509c31e4c212142bb2d0157372d65fc5b9c1b0163937e0594d6c94e7597d20fb"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_12-40-49__3WPz.cpp",
+      "bytes": 32671,
+      "sha256": "91c8ca0806f6b8d2addb4a65507621d5e28419110d26ed9006f3294b6b0428f3"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-19-01__2Vkf.cpp",
+      "bytes": 32825,
+      "sha256": "7d9921064845c5992dffd64231d5e35e04eb5ac093ab634af84e527166268e54"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-23-04__SP62.cpp",
+      "bytes": 32836,
+      "sha256": "41b2f8a7f0777268853b59fa1e7aa07424e09cddee8cd2726e7aedc13e7b3445"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-24-09__0qFh.cpp",
+      "bytes": 32838,
+      "sha256": "64a81128ef2a2c7566af8767dfbaafe33f4f769539abd69fb98c104d4715a1b2"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-24-28__4Ccp.cpp",
+      "bytes": 32838,
+      "sha256": "525521e18054fa2d2c6b50b7088976154d5360511eb5dc5c8fcc77f5147c686a"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-25-49__MAsy.cpp",
+      "bytes": 32838,
+      "sha256": "98b2147645e00514a450c66f33d16f2fb9746c0cb1e4554209f88ce67d61628f"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-26-22__g1Iq.cpp",
+      "bytes": 32838,
+      "sha256": "35b959be0652c6618a5bfebba0831d8603570a7f59961893417eb2ef4672a415"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-26-57__qgnn.cpp",
+      "bytes": 32838,
+      "sha256": "64a81128ef2a2c7566af8767dfbaafe33f4f769539abd69fb98c104d4715a1b2"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-28-13__J4Di.cpp",
+      "bytes": 32838,
+      "sha256": "66e7eb913becdfa849e6986167837ab8b54b9bbee90943b5748527964d924f9f"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-28-59__ZGqg.cpp",
+      "bytes": 32838,
+      "sha256": "362504a89bd365fb747b6080b57ea77ee64bc2a45bfff55525b5c14c0ffd5308"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-29-27__yyXT.cpp",
+      "bytes": 32838,
+      "sha256": "a95fecf62ad57ed01c0ac22509219824a8678bf49633a67b7a1e04c623bfa150"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-29-55__9vcQ.cpp",
+      "bytes": 32838,
+      "sha256": "ff9e1446e06ea18cdcb7edba87ba8a63b5ac8d5d9c48aa25fd0791b2ed963548"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-30-21__Jti0.cpp",
+      "bytes": 32838,
+      "sha256": "0ced6d3405c13e2bd497cf9a52044d3d101798b23c4585786e241a8515e15f88"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-30_13-30-56__97GZ.cpp",
+      "bytes": 32838,
+      "sha256": "03ddc3ad7b1eb1a6d13a53b3c5bb946de000ec7a35e92e8734e6956203eb38fd"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-31_00-41-29__8D1Z.cpp",
+      "bytes": 40179,
+      "sha256": "d4002c86e3fabdcc29a715247756b6476ad6b2e8d0922ba72125b4ef1fb0b3a0"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-31_00-43-04__qixV.cpp",
+      "bytes": 40179,
+      "sha256": "671ec851abbdc003f72b6400a081650e34c73b141d3a6bbb9ce6792658d569cc"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-07-31_00-44-16__wyjl.cpp",
+      "bytes": 40179,
+      "sha256": "7322872b248ab568561d26f991fbe890197c3a6e391fc245d369609dfb69db69"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-08-02_19-09-01__B28v.cpp",
+      "bytes": 42073,
+      "sha256": "879d612e6685f495f6a90463be25f27885b68acfd9865e2af410894c0b33df4a"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-08-02_19-13-34__gecI.cpp",
+      "bytes": 42073,
+      "sha256": "bacb6fa6f93985ca63d0308b5118b2247db5f0698a7a386dda06ebfb22ecb417"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-08-02_19-15-53__0ESZ.cpp",
+      "bytes": 42073,
+      "sha256": "f7146c60fbe493db4660c3285a150fcf68097aedfea1febcb41fc3b4cd4c448b"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-08-02_19-17-18__jXDz.cpp",
+      "bytes": 42073,
+      "sha256": "4dc51cd92374b31875f728c1d0eb4f45f50c393e72d8b2e538c378a30cd5664a"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-08-02_19-20-27__dPcm.cpp",
+      "bytes": 42076,
+      "sha256": "0474c7a901d7ef37e1ba2790c81ec358ca91ed93c9e897d7d151a5131eb08a4f"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-08-02_19-21-18__Dg3K.cpp",
+      "bytes": 42074,
+      "sha256": "8f2db2ce37bd02bfa78465f06be978c64a9e981ea8aa5b6a25fc94176429853d"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-08-02_19-21-30__89Aw.cpp",
+      "bytes": 42074,
+      "sha256": "c5640b6aa3fa18de70b0f743cfabb22741a95fc5bc1d1d9dd4edc5159fd7f7ca"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\2026-08-02_19-22-05__70Wj.cpp",
+      "bytes": 42074,
+      "sha256": "c3feaab74839fed392b6011cd5d82ee3eb89f9270be3a2e327fb3a142850c2ff"
+    },
+    {
+      "path": "snapshots\\PluginEditor.cpp\\original-entries.json",
+      "bytes": 1615,
+      "sha256": "70aee822d2a20bd90c48af380c75c70ab970f5e12d92f1ef11ff8890cf007878"
+    },
+    {
+      "path": "snapshots\\PluginEditor.h\\2026-07-31_00-41-11__JSUl.h",
+      "bytes": 6086,
+      "sha256": "0a2cca5e0726d6d33321fbd4275bb5e689d10f1102196b604441a5b9295b3c18"
+    },
+    {
+      "path": "snapshots\\PluginEditor.h\\2026-07-31_00-43-18__DFFC.h",
+      "bytes": 6086,
+      "sha256": "60091acbf498e51c10baef8c6aa009c8767686f3d0ffedb1578b9c1cd2def624"
+    },
+    {
+      "path": "snapshots\\PluginEditor.h\\original-entries.json",
+      "bytes": 201,
+      "sha256": "1411b68872948a894a50483b68f93cf6f00e319769bd9b71c55e1af0858ff5b6"
+    },
+    {
+      "path": "../CHANGELOG.md",
+      "bytes": 4459,
+      "sha256": "df66406d9cb0a7a9ddc4e0f9785ae621260e6a0113f56fada1fcf839088c51e3"
+    },
+    {
+      "path": "../DEVELOPMENT_HISTORY.md",
+      "bytes": 14503,
+      "sha256": "018163b4972503aaf60117bd13dac74d1bd064aea201af06417008ae8aca7625"
+    }
+  ]
+}

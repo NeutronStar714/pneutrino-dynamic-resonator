@@ -1,0 +1,67 @@
+--- 2026-07-30_12-26-56__oRPu.cpp
++++ 2026-07-30_12-40-19__99GY.cpp
+@@ -542,7 +542,7 @@
+     addAndMakeVisible (filterResponse);
+ 
+     startTimerHz (30);
+-    setSize (520, 740);
++    setSize (520, 762);
+     setResizable (false, false);
+ }
+ 
+@@ -565,10 +565,6 @@
+ void DynamicResonatorAudioEditor::paint (juce::Graphics& g)
+ {
+     g.fillAll (darkBg);
+-
+-    // Header separator
+-    g.setColour (accentColour.withAlpha (0.25f));
+-    g.fillRect (30.0f, 44.0f, getWidth() - 60.0f, 1.0f);
+ 
+     // Band boxes — rounded rectangles around each column's controls
+     static const juce::Colour boxColours[] = {
+@@ -581,10 +577,10 @@
+     const int colKnobH  = 65;
+     const int colHeader = 22;
+     const int colRow    = colKnobH + 14 + 4;    // 83
+-    const int colH      = colHeader + colRow * 3 + 32;  // 303
++    const int colH      = colHeader + colRow * 3 + 42;  // 311
+     const int colW      = (getWidth() - 24) / 4;
+-    const int boxY      = 48;  // 8 reduced + 40 header
+-    const float margin  = 5.0f;
++    const int boxY      = 42;  // 2px above header bottom
++    const float margin  = 7.0f;
+     const float radius  = 10.0f;
+     const float borderW = 2.5f;
+ 
+@@ -595,9 +591,6 @@
+         g.drawRoundedRectangle (box.reduced (margin), radius, borderW);
+     }
+ 
+-    // Separator between band columns and global controls
+-    g.setColour (accentColour.withAlpha (0.15f));
+-    g.fillRect (30.0f, 347.0f, getWidth() - 60.0f, 1.0f);
+ }
+ 
+ void DynamicResonatorAudioEditor::resized()
+@@ -658,16 +651,16 @@
+         bandDirBtn[b].setBounds (col.withTop (yPos).withHeight (20).reduced (9, 0));
+     }
+ 
+-    // === Global controls (Dry, Wet, Pre, Post) ===
+-    const int globalH = 65;
++    // === Global controls (Dry, Wet, Pre, Post) — same size as band knobs ===
++    const int globalH = colRow + 4;  // 87 — matches band knob row height
+     auto globalArea = area.removeFromTop (globalH).reduced (4, 4);
+     const int kw4 = globalArea.getWidth() / 4;
+ 
+     auto placeGlobal = [&](juce::Slider& knob, juce::Label& lbl, int idx)
+     {
+         auto r = globalArea.withX (globalArea.getX() + idx * kw4).withWidth (kw4);
+-        knob.setBounds (r.withHeight (48).reduced (6, 2));
+-        lbl.setBounds (r.withTop (r.getY() + 50).withHeight (14).reduced (6, 0));
++        knob.setBounds (r.withHeight (colKnobH).reduced (6, 2));
++        lbl.setBounds (r.withTop (r.getY() + colKnobH).withHeight (14).reduced (6, 0));
+     };
+     placeGlobal (dryKnob,           dryLbl,           0);
+     placeGlobal (wetKnob,           wetLbl,           1);

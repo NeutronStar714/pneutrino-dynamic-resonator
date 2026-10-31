@@ -1,0 +1,11 @@
+--- 2026-07-30_13-23-04__SP62.cpp
++++ 2026-07-30_13-24-09__0qFh.cpp
+@@ -604,7 +604,7 @@
+     nameLabel.setBounds (area.removeFromTop (40).withY (6).reduced (0, 4));
+ 
+     // === Attribution (always at bottom) ===
+-    attributionLabel.setBounds (area.removeFromBottom (22).withY (4) .reduced (4, 0));
++    attributionLabel.setBounds (area.removeFromBottom (22).withY (700) .reduced (4, 0));
+ 
+     // === 4-band columns (3 knobs + dir switch, PEAK bands have vertical level slider) ===
+     const int colKnobH  = 65;

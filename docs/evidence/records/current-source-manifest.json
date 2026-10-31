@@ -1,0 +1,48 @@
+{
+  "recovered_date": "2026-10-31",
+  "note": "Current project-owned source snapshot; JUCE is an external dependency, not copied here. Filesystem dates are weak corroboration, not edit history.",
+  "files": [
+    {
+      "path": "CMakeLists.txt",
+      "bytes": 1640,
+      "sha256": "7b7efa66578f6aecf108d010f72aec44fd3f4bef30b129f7c137586547f744f6",
+      "last_write_time": "2026-08-02T19:37:50.093477+08:00",
+      "creation_time": "2026-07-27T22:47:27.170389+08:00"
+    },
+    {
+      "path": "defaults.txt",
+      "bytes": 729,
+      "sha256": "560326b3246b79dab496d74cdcd111c5561392e71c17ee3c9978a2a784dcd0e4",
+      "last_write_time": "2026-07-30T11:55:19.500249+08:00",
+      "creation_time": "2026-07-30T02:55:48.418302+08:00"
+    },
+    {
+      "path": "Source\\PluginEditor.cpp",
+      "bytes": 42275,
+      "sha256": "6cde427e3596a1e66dfe2b8f8a3120bd17bbcec9b7c27bdd4ac2a30ac30c929c",
+      "last_write_time": "2026-08-02T19:29:14.403683+08:00",
+      "creation_time": "2026-08-02T19:29:14.383681+08:00"
+    },
+    {
+      "path": "Source\\PluginEditor.h",
+      "bytes": 6821,
+      "sha256": "4443c8b4be218820ff58dac49f5642fd244be859283c7998ce22b48e193f5e4f",
+      "last_write_time": "2026-08-01T00:09:25.775923+08:00",
+      "creation_time": "2026-08-01T00:09:25.769923+08:00"
+    },
+    {
+      "path": "Source\\PluginProcessor.cpp",
+      "bytes": 16119,
+      "sha256": "bb14f90893f2e8e0e14c1a3cae1c76b51aa1007b807bb52cde61ec85e54d11f5",
+      "last_write_time": "2026-08-02T13:05:12.660244+08:00",
+      "creation_time": "2026-08-02T13:05:12.646244+08:00"
+    },
+    {
+      "path": "Source\\PluginProcessor.h",
+      "bytes": 8109,
+      "sha256": "ec5e503f94428efc8c51c2bbf0ea4f3ea57b4ee03d9803c61985df740c93ebc7",
+      "last_write_time": "2026-08-01T00:17:26.351585+08:00",
+      "creation_time": "2026-08-01T00:17:26.327585+08:00"
+    }
+  ]
+}

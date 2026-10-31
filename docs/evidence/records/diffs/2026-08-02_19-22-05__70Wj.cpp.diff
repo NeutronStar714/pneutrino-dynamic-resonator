@@ -1,0 +1,15 @@
+--- 2026-08-02_19-21-30__89Aw.cpp
++++ 2026-08-02_19-22-05__70Wj.cpp
+@@ -722,10 +722,10 @@
+     auto area = getLocalBounds().reduced (12);
+ 
+     // === Header ===
+-    nameLabel.setBounds (area.removeFromTop (34).withY (0).reduced (0, 4));
++    nameLabel.setBounds (area.removeFromTop (34).withY (4).reduced (0, 4));
+ 
+     // === Attribution (always at bottom) ===
+-    attributionLabel.setBounds (area.removeFromBottom (18).withY (798) .reduced (4, 0));
++    attributionLabel.setBounds (area.removeFromBottom (18).withY (797) .reduced (4, 0));
+ 
+     // === 4-band columns (3 knobs + dir switch, PEAK bands have vertical level slider) ===
+     const int colKnobH  = 65;

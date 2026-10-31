@@ -1,0 +1,20 @@
+^[workspace]\DYNAMIC RESONATOR\BUILD\CMAKEFILES\D34D888B1CDA227FC66FEBAE64FCD29A\JUCEHEADER.H.RULE
+setlocal
+JUCE\tools\extras\Build\juceaide\juceaide_artefacts\Custom\juceaide.exe header "[workspace]/Dynamic Resonator/Build/DynamicResonator_artefacts/JuceLibraryCode/Debug/Defs.txt" "[workspace]/Dynamic Resonator/Build/DynamicResonator_artefacts/JuceLibraryCode/JuceHeader.h"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^[workspace]\DYNAMIC RESONATOR\CMAKELISTS.TXT
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-S[workspace]/Dynamic Resonator" "-B[workspace]/Dynamic Resonator/Build" --check-stamp-file "[workspace]/Dynamic Resonator/Build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

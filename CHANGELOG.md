@@ -2,6 +2,11 @@
 
 Historical entries were **reconstructed on 2026-10-31**, using surviving prompts, editor-file snapshots and current source. They describe documented development activity, not verified release dates. No original project Git history was recovered.
 
+## Development record — 2026-10-31
+
+- Added all recovered project prompts, saved source revisions, diffs, build records and related notes.
+- Replaced the shorter evidence page with a development-process summary linked to the complete recovered record. Personal directory paths are redacted; original records remain preserved locally.
+
 ## Source import — 2026-10-31
 
 - Imported the existing project version declaration, **1.3.0**, and all four current C++ files unchanged.
@@ -37,4 +42,4 @@ Historical entries were **reconstructed on 2026-10-31**, using surviving prompts
 
 - Defined the initial dynamic-filter brief and investigated the Windows build toolchain using Spacer's working recipe.
 
-[Selected evidence and provenance](docs/evidence/README.md) explains what can and cannot be established from these records.
+[Development process](docs/evidence/README.md) includes the full recovered record and explains its gaps.

@@ -1,0 +1,53 @@
+--- 2026-07-30_11-50-44__qkyk.cpp
++++ 2026-07-30_12-00-15__mRXo.cpp
+@@ -393,7 +393,7 @@
+     };
+ 
+     // --- Band controls ---
+-    const float freqDefaults[]  = { 20.0f, 200.0f, 2000.0f, 20000.0f };
++    const float freqDefaults[]  = { 20.0f, 200.0f, 2000.0f, 100.0f };
+     const float qDefault        = 0.707f;
+     const juce::String bandNames[] = { "HP", "PEAK 1", "PEAK 2", "LP" };
+ 
+@@ -472,7 +472,7 @@
+         }
+ 
+         // Sensitivity (per-band, B1 defaults to 0)
+-        const float sensDefaults[] = { 0.0f, 0.7f, 0.7f, 0.7f };
++        const float sensDefaults[] = { 0.0f, 0.7f, 0.7f, 1.0f };
+         setupKnob (bandSensKnob[b], bandSensLbl[b], "Sens", sensDefaults[b], 0.0, 1.0, 0.001);
+         bandSensLbl[b].setColour (juce::Label::textColourId, muteText);
+ 
+@@ -570,6 +570,23 @@
+     g.setColour (accentColour.withAlpha (0.25f));
+     g.fillRect (30.0f, 44.0f, getWidth() - 60.0f, 1.0f);
+ 
++    // Band boxes — rounded rectangles around each column's controls
++    const int colKnobH  = 65;
++    const int colHeader = 22;
++    const int colRow    = colKnobH + 14 + 4;    // 83
++    const int colH      = colHeader + colRow * 3 + 24;  // 295
++    const int colW      = (getWidth() - 24) / 4;
++    const int boxY      = 52;  // 12 reduced + 40 header
++    const float margin  = 2.5f;
++    const float radius  = 10.0f;
++
++    g.setColour (accentColour.withAlpha (0.15f));
++    for (int b = 0; b < 4; ++b)
++    {
++        auto box = juce::Rectangle<float> (12.0f + b * colW, boxY, colW, colH);
++        g.drawRoundedRectangle (box.reduced (margin), radius, 1.0f);
++    }
++
+     // Separator between band columns and global controls
+     g.setColour (accentColour.withAlpha (0.15f));
+     g.fillRect (30.0f, 347.0f, getWidth() - 60.0f, 1.0f);
+@@ -622,7 +639,7 @@
+         if (isPeak)
+         {
+             const int sliderH = 2 * colRow + colKnobH;  // text box bottom aligns with Sens text box
+-            const int belowTxt = col.getY() + sliderH - 2;  // label below component = same Y as Sens label
++            const int belowTxt = col.getY() + sliderH - 20;  // label below component = same Y as Sens label
+             auto sr = col.withLeft (col.getX() + colW - sliderW - 15)
+                         .withTop (col.getY())
+                         .withWidth (sliderW).withHeight (sliderH);

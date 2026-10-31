@@ -1,0 +1,304 @@
+--- 2026-07-30_13-30-56__97GZ.cpp
++++ 2026-07-31_00-41-29__8D1Z.cpp
+@@ -353,6 +353,27 @@
+             g.strokePath (p, juce::PathStrokeType (1.5f));
+         }
+     }
++
++    // Band marker circles at (freq, level)
++    static const juce::Colour markerColours[] = {
++        juce::Colour (0xFF365E63),
++        juce::Colour (0xFF599DA6),
++        juce::Colour (0xFF9CC4C9),
++        juce::Colour (0xFFDEEBED)
++    };
++
++    for (int b = 0; b < 4; ++b)
++    {
++        if (currentBands[b].freqHz < 1.0f) continue;
++
++        const float frac = logFreqToFrac (currentBands[b].freqHz);
++        const float x    = oX + frac * plotW;
++        const float dB   = (b == 0) ? 0.0f : currentBands[b].levelDb;
++        const float y    = oY - ((dB - dbMin) / dbRange) * plotH;
++
++        g.setColour (markerColours[b]);
++        g.fillEllipse (x - 5.0f, y - 5.0f, 10.0f, 10.0f);
++    }
+ }
+ 
+ //==============================================================================
+@@ -503,28 +524,28 @@
+         };
+     }
+ 
+-    // --- Global controls (Dry, Wet, Pre, Post) ---
+-    auto setupGlobal = [&](juce::Slider& knob, juce::Label& lbl,
+-                            const juce::String& text, double def, double lo, double hi)
++    // --- Row 1: six global knobs (Dry, Wet, Pre, Post, Attack, Release) ---
++    auto setupKnob6 = [&](juce::Slider& knob, juce::Label& lbl,
++                           const juce::String& text, double def, double lo, double hi, double step)
+     {
+         knob.setSliderStyle (juce::Slider::RotaryHorizontalVerticalDrag);
+-        knob.setRange (lo, hi, (hi - lo < 50.0 ? 0.1 : 0.001));
+-        knob.setValue (def, juce::dontSendNotification);
++        knob.setRange (lo, hi, step);
+         knob.setTextBoxStyle (juce::Slider::TextBoxBelow, false, 40, 16);
+         knob.setDoubleClickReturnValue (true, def);
+         knob.setLookAndFeel (&lnf);
+         addAndMakeVisible (knob);
+-
+         lbl.setText (text, juce::dontSendNotification);
+         lbl.setFont (juce::Font (juce::FontOptions ("Helvetica", 10.0f, juce::Font::bold)));
+         lbl.setJustificationType (juce::Justification::centred);
+         addAndMakeVisible (lbl);
+     };
+ 
+-    setupGlobal (dryKnob,   dryLbl,   "Dry",  0.5, 0.0, 1.0);
+-    setupGlobal (wetKnob,   wetLbl,   "Wet",  0.5, 0.0, 1.0);
+-    setupGlobal (bandLevelKnob[0], bandLevelLbl[0], "Pre",  0.0, -12.0, 12.0);
+-    setupGlobal (bandLevelKnob[3], bandLevelLbl[3], "Post", 0.0, -24.0, 24.0);
++    setupKnob6 (dryKnob,   dryLbl,   "Dry",    0.5, 0.0, 1.0,   0.001);
++    setupKnob6 (wetKnob,   wetLbl,   "Wet",    0.5, 0.0, 1.0,   0.001);
++    setupKnob6 (bandLevelKnob[0], bandLevelLbl[0], "Pre",   0.0, -12.0, 12.0, 0.1);
++    setupKnob6 (bandLevelKnob[3], bandLevelLbl[3], "Post",  0.0, -24.0, 24.0, 0.1);
++    setupKnob6 (attackKnob,  attackLbl,  "Attack",  23,   1, 100,    1.0);
++    setupKnob6 (releaseKnob, releaseLbl, "Release", 110, 20, 300,   1.0);
+ 
+     bandLevelKnob[0].setVisible (true);
+     bandLevelLbl[0].setVisible (true);
+@@ -536,16 +557,72 @@
+     bandLevelLbl[0].setColour (juce::Label::textColourId, muteText);
+     bandLevelLbl[3].setColour (juce::Label::textColourId, muteText);
+ 
+-    dryAttach = std::make_unique<SliderAttach> (apvts, DynamicResonatorAudioProcessor::paramDryID, dryKnob);
+-    wetAttach = std::make_unique<SliderAttach> (apvts, DynamicResonatorAudioProcessor::paramWetID, wetKnob);
+-    // levelAttachments[0] and [3] are already set in the loop (attach to bandLevelKnob[0]/[3])
++    dryAttach    = std::make_unique<SliderAttach> (apvts, DynamicResonatorAudioProcessor::paramDryID,     dryKnob);
++    wetAttach    = std::make_unique<SliderAttach> (apvts, DynamicResonatorAudioProcessor::paramWetID,     wetKnob);
++    attackLbl.setColour (juce::Label::textColourId, muteText);
++    releaseLbl.setColour (juce::Label::textColourId, muteText);
++    attackAttach = std::make_unique<SliderAttach> (apvts, DynamicResonatorAudioProcessor::paramAttackID,  attackKnob);
++    releaseAttach= std::make_unique<SliderAttach> (apvts, DynamicResonatorAudioProcessor::paramReleaseID, releaseKnob);
++    // levelAttachments[0] and [3] are already set in the loop
++
++    // --- Row 2: Dynamic Range slider + RMS/AM toggle ---
++    {
++        drSlider.setSliderStyle (juce::Slider::TwoValueHorizontal);
++        drSlider.setRange (0.0, 1.0, 0.001);
++        drSlider.setMinValue (0.0, juce::dontSendNotification);
++        drSlider.setMaxValue (1.0, juce::dontSendNotification);
++        drSlider.setColour (juce::Slider::trackColourId,       accentColour);
++        drSlider.setColour (juce::Slider::backgroundColourId,  panelBg);
++        drSlider.setColour (juce::Slider::thumbColourId,       accentColour);
++        drSlider.setTextBoxStyle (juce::Slider::NoTextBox, 0, 0, 0);
++        drSlider.addListener (this);
++        addAndMakeVisible (drSlider);
++
++        auto setupNumBox = [&](juce::Label& lbl, float defVal) {
++            lbl.setText (juce::String (defVal, 3), juce::dontSendNotification);
++            lbl.setFont (juce::Font (juce::FontOptions (12.0f)));
++            lbl.setEditable (true, false, true);
++            lbl.setColour (juce::Label::textColourId,       textColour);
++            lbl.setColour (juce::Label::backgroundColourId, darkBg);
++            lbl.setColour (juce::Label::outlineColourId,    darkBg);
++            lbl.setColour (juce::Label::textWhenEditingColourId, textColour);
++            lbl.setColour (juce::Label::backgroundWhenEditingColourId, darkBg);
++            lbl.setJustificationType (juce::Justification::centred);
++            lbl.addListener (this);
++            addAndMakeVisible (lbl);
++        };
++        setupNumBox (drMinVal, 0.0f);
++        setupNumBox (drMaxVal, 1.0f);
++
++        drLbl.setText ("DR", juce::dontSendNotification);
++        drLbl.setFont (juce::Font (juce::FontOptions ("Helvetica", 10.0f, juce::Font::bold)));
++        drLbl.setColour (juce::Label::textColourId, muteText);
++        drLbl.setJustificationType (juce::Justification::centred);
++        addAndMakeVisible (drLbl);
++
++        // RMS / AM toggle
++        modeBtn.setButtonText ("RMS");
++        modeBtn.setClickingTogglesState (true);
++        modeBtn.setColour (juce::TextButton::textColourOffId,   juce::Colours::white);
++        modeBtn.setColour (juce::TextButton::textColourOnId,    accentColour);
++        modeBtn.setColour (juce::TextButton::buttonColourId,    accentColour);
++        modeBtn.setColour (juce::TextButton::buttonOnColourId, panelBg);
++        modeBtn.setLookAndFeel (&lnf);
++        addAndMakeVisible (modeBtn);
++
++        modeAttach = std::make_unique<ButtonAttach> (apvts, DynamicResonatorAudioProcessor::paramModeID, modeBtn);
++        modeBtn.setButtonText (modeBtn.getToggleState() ? "AM" : "RMS");
++        modeBtn.onClick = [btn = &modeBtn]() {
++            btn->setButtonText (btn->getToggleState() ? "AM" : "RMS");
++        };
++    }
+ 
+     // --- Displays ---
+     addAndMakeVisible (loudnessMeter);
+     addAndMakeVisible (filterResponse);
+ 
+     startTimerHz (30);
+-    setSize (520, 762);
++    setSize (520, 827);
+     setResizable (false, false);
+ }
+ 
+@@ -562,6 +639,9 @@
+     }
+     dryKnob.setLookAndFeel (nullptr);
+     wetKnob.setLookAndFeel (nullptr);
++    attackKnob.setLookAndFeel (nullptr);
++    releaseKnob.setLookAndFeel (nullptr);
++    modeBtn.setLookAndFeel (nullptr);
+ }
+ 
+ //==============================================================================
+@@ -571,10 +651,10 @@
+ 
+     // Band boxes — rounded rectangles around each column's controls
+     static const juce::Colour boxColours[] = {
+-        juce::Colour (0xFF599DA6),  // HP
+-        juce::Colour (0xFF7AB0B8),  // PEAK 1
++        juce::Colour (0xFF365E63),  // HP
++        juce::Colour (0xFF599DA6),  // PEAK 1
+         juce::Colour (0xFF9CC4C9),  // PEAK 2
+-        juce::Colour (0xFFBDD8DB)   // LP
++        juce::Colour (0xFFDEEBED)   // LP
+     };
+ 
+     const int colKnobH  = 65;
+@@ -604,7 +684,7 @@
+     nameLabel.setBounds (area.removeFromTop (40).withY (6).reduced (0, 4));
+ 
+     // === Attribution (always at bottom) ===
+-    attributionLabel.setBounds (area.removeFromBottom (22).withY (734) .reduced (4, 0));
++    attributionLabel.setBounds (area.removeFromBottom (22).withY (764) .reduced (4, 0));
+ 
+     // === 4-band columns (3 knobs + dir switch, PEAK bands have vertical level slider) ===
+     const int colKnobH  = 65;
+@@ -654,21 +734,47 @@
+         bandDirBtn[b].setBounds (col.withTop (yPos).withHeight (20).reduced (11, 0));
+     }
+ 
+-    // === Global controls (Dry, Wet, Pre, Post) — same size as band knobs ===
+-    const int globalH = colRow + 4;  // 87 — matches band knob row height
+-    auto globalArea = area.removeFromTop (globalH).reduced (4, 4);
+-    const int kw4 = globalArea.getWidth() / 4;
+-
+-    auto placeGlobal = [&](juce::Slider& knob, juce::Label& lbl, int idx)
+-    {
+-        auto r = globalArea.withX (globalArea.getX() + idx * kw4).withWidth (kw4);
+-        knob.setBounds (r.withHeight (colKnobH).reduced (6, 2));
+-        lbl.setBounds (r.withTop (r.getY() + colKnobH).withHeight (14).reduced (6, 0));
+-    };
+-    placeGlobal (dryKnob,           dryLbl,           0);
+-    placeGlobal (wetKnob,           wetLbl,           1);
+-    placeGlobal (bandLevelKnob[0], bandLevelLbl[0],   2);  // Pre
+-    placeGlobal (bandLevelKnob[3], bandLevelLbl[3],   3);  // Post
++    // === Row 1: six global knobs (Dry, Wet, Pre, Post, Attack, Release) ===
++    const int row1H = colRow + 4;  // 87
++    auto row1Area = area.removeFromTop (row1H).reduced (4, 4);
++    const int kw6 = row1Area.getWidth() / 6;
++
++    auto placeKnob6 = [&](juce::Slider& knob, juce::Label& lbl, int col)
++    {
++        auto r = row1Area.withX (row1Area.getX() + col * kw6).withWidth (kw6);
++        knob.setBounds (r.withHeight (colKnobH).reduced (4, 2));
++        lbl.setBounds (r.withTop (r.getY() + colKnobH).withHeight (14).reduced (4, 0));
++    };
++    placeKnob6 (dryKnob,           dryLbl,           0);
++    placeKnob6 (wetKnob,           wetLbl,           1);
++    placeKnob6 (bandLevelKnob[0], bandLevelLbl[0],   2);
++    placeKnob6 (bandLevelKnob[3], bandLevelLbl[3],   3);
++    placeKnob6 (attackKnob,        attackLbl,        4);
++    placeKnob6 (releaseKnob,       releaseLbl,       5);
++
++    // === Row 2: Dynamic Range slider + RMS/AM toggle ===
++    const int row2H = 55;
++    auto row2Area = area.removeFromTop (row2H).reduced (4, 4);
++
++    const int nbW    = 40;      // number box width (matches Dry knob's text box)
++    const int btnW   = 70;      // mode button width
++    const int drSlW  = row2Area.getWidth() - nbW * 2 - btnW - 4;
++    const int midX  = row2Area.getX() + nbW;
++
++    // Left number box (min) — matches Dry knob's text box dimensions
++    drMinVal.setBounds (row2Area.withWidth (nbW).withHeight (16).translated (0, (row2Area.getHeight() - 16) / 2));
++
++    // Slider
++    drSlider.setBounds (midX, row2Area.getY() + 4, drSlW, row2Area.getHeight() - 8);
++    drLbl.setBounds (midX, row2Area.getY() + row2Area.getHeight() - 12, drSlW, 12);
++
++    // Right number box (max)
++    drMaxVal.setBounds (row2Area.withLeft (midX + drSlW + 2).withWidth (nbW).withHeight (16)
++                                 .translated (0, (row2Area.getHeight() - 16) / 2));
++
++    // Mode toggle
++    modeBtn.setBounds (row2Area.withLeft (row2Area.getRight() - btnW).withWidth (btnW)
++                                .reduced (6, 8));
+ 
+     // === Loudness meter ===
+     loudnessMeter.setBounds (area.removeFromTop (26).reduced (4, 2));
+@@ -677,11 +783,46 @@
+     filterResponse.setBounds (area.reduced (4, 2));
+ }
+ 
++void DynamicResonatorAudioEditor::sliderValueChanged (Slider* slider)
++{
++    if (slider == &drSlider)
++    {
++        auto* paramMin = processorRef.apvts.getParameter (DynamicResonatorAudioProcessor::paramDRMinID);
++        auto* paramMax = processorRef.apvts.getParameter (DynamicResonatorAudioProcessor::paramDRMaxID);
++        if (paramMin != nullptr) paramMin->setValueNotifyingHost ((float) drSlider.getMinValue());
++        if (paramMax != nullptr) paramMax->setValueNotifyingHost ((float) drSlider.getMaxValue());
++    }
++}
++
++void DynamicResonatorAudioEditor::labelTextChanged (Label* label)
++{
++    auto setDR = [&](float val, bool isMin) {
++        val = juce::jlimit (0.0f, 1.0f, val);
++        if (isMin) { val = std::min (val, *processorRef.apvts.getRawParameterValue (DynamicResonatorAudioProcessor::paramDRMaxID) - 0.001f); }
++        else       { val = std::max (val, *processorRef.apvts.getRawParameterValue (DynamicResonatorAudioProcessor::paramDRMinID) + 0.001f); }
++        auto* param = processorRef.apvts.getParameter (isMin ? DynamicResonatorAudioProcessor::paramDRMinID
++                                                             : DynamicResonatorAudioProcessor::paramDRMaxID);
++        if (param != nullptr) param->setValueNotifyingHost (param->convertTo0to1 (val));
++    };
++
++    if      (label == &drMinVal) setDR (label->getText().getFloatValue(), true);
++    else if (label == &drMaxVal) setDR (label->getText().getFloatValue(), false);
++}
++
+ //==============================================================================
+ void DynamicResonatorAudioEditor::timerCallback()
+ {
+     const float envelope = processorRef.getCurrentEnvelope();
+     loudnessMeter.setLevel (envelope);
++
++    // Sync DR slider from parameter values (in case preset was loaded)
++    const float drMin = *processorRef.apvts.getRawParameterValue (DynamicResonatorAudioProcessor::paramDRMinID);
++    const float drMax = *processorRef.apvts.getRawParameterValue (DynamicResonatorAudioProcessor::paramDRMaxID);
++    drSlider.setMinValue (drMin, juce::dontSendNotification);
++    drSlider.setMaxValue (drMax, juce::dontSendNotification);
++    // Only update DR number boxes when not being edited
++    if (! drMinVal.isBeingEdited()) drMinVal.setText (juce::String (drMin, 3), juce::dontSendNotification);
++    if (! drMaxVal.isBeingEdited()) drMaxVal.setText (juce::String (drMax, 3), juce::dontSendNotification);
+ 
+     const float dry = *processorRef.apvts.getRawParameterValue (DynamicResonatorAudioProcessor::paramDryID);
+     const float wet = *processorRef.apvts.getRawParameterValue (DynamicResonatorAudioProcessor::paramWetID);
+@@ -748,10 +889,13 @@
+             }
+         }
+ 
++        bandCoeffs[b].freqHz  = modFreq;
++        bandCoeffs[b].levelDb = level;
++
+         if (b == 0)
+         {
+             bandCoeffs[b].coeffs   = Coefficients::makeHighPass (sr, modFreq, q);
+-            bandCoeffs[b].postTrim = 1.0f;  // HP level is pre-amp, not a post-trim
++            bandCoeffs[b].postTrim = 1.0f;
+         }
+         else if (b == 1 || b == 2)
+         {
