@@ -16,8 +16,12 @@ These are contemporaneous observations from the recovered prompts, not newly rep
 - Toolchain: CMake 4.4.0-rc1, Visual Studio 2022 Build Tools / MSVC 19.44.35228, Windows SDK 10.0.26100.0. The check used the existing clean JUCE checkout at the pinned revision through `PNEUTRINO_JUCE_SOURCE_DIR`.
 - MSVC emitted warnings, including source-code-page and numeric-conversion warnings. They were not treated as evidence of runtime correctness, and no DSP/UI source changes were made to silence them.
 
+## Release packaging — November 1, 2026
+
+Version 1.3.0 was built from the tagged source on GitHub's Windows 2022 runner with the pinned JUCE dependency. The standalone and complete VST3 bundle are provided as separate ZIPs, with installation notes, project/dependency notices and SHA-256 checksums. The author's guitar audio demo is also available. These build/package checks do not replace host, device or real-time performance testing.
+
 ## Pending
 
-Fresh FL Studio listening tests, state save/reopen checks, sample-rate/buffer-size measurements, a portable executable download, and the guitar comparison video have not been completed for this import. No macOS/Linux runtime claim is made. No historical automated DSP test suite was recovered for this project.
+Fresh FL Studio listening tests, state save/reopen checks, sample-rate/buffer-size measurements and the screen-recorded guitar walkthrough have not been completed for this import. No macOS/Linux runtime claim is made. No historical automated DSP test suite was recovered for this project.
 
 The current audio callback still constructs JUCE coefficient objects when filter updates are needed. Reduced update frequency is not proof of allocation-free processing or a particular real-time performance level.

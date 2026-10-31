@@ -14,7 +14,9 @@ Guitar audio demo by NeutronStar714, recorded for the Pneutrino plugin showcase 
 
 GitHub does not render audio controls inside a README; the link provides the playable MP3 file.
 
-The screen-recorded walkthrough is still in preparation.
+[Download Standalone](https://github.com/NeutronStar714/pneutrino-dynamic-resonator/releases/download/v1.3.0/DynamicResonator-1.3.0-Windows-x64-Standalone.zip) · [Download VST3](https://github.com/NeutronStar714/pneutrino-dynamic-resonator/releases/download/v1.3.0/DynamicResonator-1.3.0-Windows-x64-VST3.zip) · [Release notes and checksums](https://github.com/NeutronStar714/pneutrino-dynamic-resonator/releases/tag/v1.3.0)
+
+Windows x64, version **1.3.0**. Extract the standalone ZIP to run it, or install the complete VST3 bundle in your DAW's plugin folder. The screen-recorded walkthrough is still in preparation.
 
 ## Implemented in the recovered source
 

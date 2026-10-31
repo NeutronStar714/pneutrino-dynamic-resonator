@@ -2,6 +2,12 @@
 
 Historical entries were **reconstructed on 2026-10-31**, using surviving prompts, editor-file snapshots and current source. They describe documented development activity, not verified release dates. No original project Git history was recovered.
 
+## 1.3.0 release — 2026-11-01
+
+- Published separate Windows x64 standalone and VST3 packages built from the tagged source, with installation notes and checksums.
+- Added the recorded guitar audio demo to the README and release downloads.
+- Kept the existing 1.3.0 DSP/UI implementation unchanged.
+
 ## Development record — 2026-10-31
 
 - Added all recovered project prompts, saved source revisions, diffs, build records and related notes.
