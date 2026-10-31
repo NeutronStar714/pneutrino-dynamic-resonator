@@ -10,9 +10,9 @@ An four-band equalizer with input-responsive frequency control for live guitar p
 
 Guitar audio demo by NeutronStar714, recorded for the Pneutrino plugin showcase (38 seconds).
 
-[▶ Listen to the audio demo](https://raw.githubusercontent.com/NeutronStar714/pneutrino-dynamic-resonator/main/assets/pr-rec-dynres.mp3)
+[▶ Listen / download the audio demo](https://raw.githubusercontent.com/NeutronStar714/pneutrino-dynamic-resonator/main/assets/pr-rec-dynres.mp3)
 
-GitHub does not render audio controls inside a README; the link opens the browser's audio player.
+GitHub does not render audio controls inside a README; the link provides the playable MP3 file.
 
 The screen-recorded walkthrough is still in preparation.
 
