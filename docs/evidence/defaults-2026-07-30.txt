@@ -1,0 +1,34 @@
+Dynamic Resonator — Default Values
+====================================
+
+GLOBAL
+  Dry    0–1      0.5
+  Wet    0–1      0.5
+
+BAND 1 — HP
+  Freq   20–20000  20     (log)
+  Q      0.1–10.0  0.707
+  Level  -24–+24   0.0
+  Sens   0–1       0.0
+  Dir    Up/Down   Up
+
+BAND 2 — PEAK 1
+  Freq   20–20000  200    (log)
+  Q      0.1–10.0  0.707
+  Level  -24–+24   0.0
+  Sens   0–1       0.7
+  Dir    Up/Down   Up
+
+BAND 3 — PEAK 2
+  Freq   20–20000  2000    (log)
+  Q      0.1–10.0  0.707
+  Level  -24–+24   0.0
+  Sens   0–1       0.7
+  Dir    Up/Down   Up
+
+BAND 4 — LP
+  Freq   20–20000  100    (log)
+  Q      0.1–10.0  0.707
+  Level  -24–+24   0.0
+  Sens   0–1       1
+  Dir    Up/Down   Up

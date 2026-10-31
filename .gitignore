@@ -1,0 +1,10 @@
+/build/
+/Build/
+/cmake-build-*/
+/.vs/
+/.vscode/
+/CMakeUserPresets.json
+*.user
+*.suo
+.DS_Store
+Thumbs.db

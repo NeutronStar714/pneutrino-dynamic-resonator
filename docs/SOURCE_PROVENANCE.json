@@ -1,0 +1,32 @@
+{
+  "imported_on": "2026-10-31",
+  "declared_version": "1.3.0",
+  "project_source_files": [
+    {
+      "path": "Source/PluginEditor.cpp",
+      "bytes": 42275,
+      "sha256": "6cde427e3596a1e66dfe2b8f8a3120bd17bbcec9b7c27bdd4ac2a30ac30c929c"
+    },
+    {
+      "path": "Source/PluginEditor.h",
+      "bytes": 6821,
+      "sha256": "4443c8b4be218820ff58dac49f5642fd244be859283c7998ce22b48e193f5e4f"
+    },
+    {
+      "path": "Source/PluginProcessor.cpp",
+      "bytes": 16119,
+      "sha256": "bb14f90893f2e8e0e14c1a3cae1c76b51aa1007b807bb52cde61ec85e54d11f5"
+    },
+    {
+      "path": "Source/PluginProcessor.h",
+      "bytes": 8109,
+      "sha256": "ec5e503f94428efc8c51c2bbf0ea4f3ea57b4ee03d9803c61985df740c93ebc7"
+    }
+  ],
+  "dependency": {
+    "path": "external/JUCE",
+    "repository": "https://github.com/juce-framework/JUCE.git",
+    "commit": "3ba67d4585e9d1fbcdb26a877c7978608b1f802e"
+  },
+  "build_change": "The import replaces the sibling JUCE path with a portable cached source-directory option. The four project source files are unchanged."
+}

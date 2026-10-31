@@ -1,0 +1,12 @@
+--- 2026-08-02_19-22-05__70Wj.cpp
++++ current/Source/PluginEditor.cpp
+@@ -553,6 +553,9 @@
+         // Attachments
+         freqAttachments[b]  = std::make_unique<SliderAttach> (apvts, freqIds[b],  bandFreqKnob[b]);
+         bandFreqKnob[b].textFromValueFunction = [] (double val) { return juce::String (int (val + 0.5)); };
++        // Force the text box to re-render with our integer formatter — the attachment's
++        // initial update already painted the default float formatting.
++        bandFreqKnob[b].updateText();
+         qAttachments[b]     = std::make_unique<SliderAttach> (apvts, qIds[b],     bandQKnob[b]);
+         levelAttachments[b] = std::make_unique<SliderAttach> (apvts, lvlIds[b],   bandLevelKnob[b]);
+         sensAttachments[b]  = std::make_unique<SliderAttach> (apvts, sensIds[b],  bandSensKnob[b]);
