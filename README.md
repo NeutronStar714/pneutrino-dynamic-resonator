@@ -2,7 +2,7 @@
 
 # Dynamic Resonator
 
-An four-band equalizer with input-responsive frequency control for live guitar playing, sound design and music production, from **the Pneutrino series by independent music producer and G10's lead guitarist NeutronStar714**. Inspired by the BOSS FT-2 dynamic filter pedal's auto-wah behavior, it extends amplitude-driven frequency movement to a 4-band EQ: high-pass, two peaking EQ bands and a low-pass. Each band has independent frequency, resonance (Q), sensitivity and Up/Down sweep controls.
+A four-band equalizer with input-responsive frequency control for live guitar playing, sound design and music production, from **the Pneutrino series** by independent music producer and G10's lead guitarist NeutronStar714. Inspired by the BOSS FT-2 dynamic filter pedal's auto-wah behavior, it extends amplitude-driven frequency movement to a 4-band EQ: high-pass, two peaking EQ bands and a low-pass. Each band has independent frequency, resonance (Q), sensitivity and Up/Down sweep controls.
 
 **Start here:** [How it was made](docs/PROCESS.md) · [Complete project source](Source) · [Build instructions](BUILDING.md) · [Contributions and AI assistance](docs/CONTRIBUTIONS.md)
 
